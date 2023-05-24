@@ -23,7 +23,7 @@ export default function ScienceFields() {
       "#CD8D5D",
       "#F74521",
       "#643C25",
-      "#A5A885",
+      "##f2e0a0",
     ];
     if (screenWidth > 450) {
       mobile.classList.remove("active-section");
@@ -55,10 +55,10 @@ export default function ScienceFields() {
     function changeActiveNav() {
       let sections, nav_links, index;
       const activeSection = document.querySelector(".active-section");
-      if (activeSection){
-        sections = activeSection.querySelectorAll(".sContainer > div");     
+      if (activeSection) {
+        sections = activeSection.querySelectorAll(".sContainer > div");
         nav_links = document.querySelectorAll(".side-nav ul li a");
-        index = sections.length;   
+        index = sections.length;
       }
 
       while (
@@ -66,15 +66,15 @@ export default function ScienceFields() {
         window.scrollY + window.innerHeight / 2 < sections[index].offsetTop
       ) {}
 
-      if(nav_links){
+      if (nav_links) {
         nav_links.forEach((link) => {
           link.classList.remove("active");
           // Change the color of all links
           link.style.backgroundColor = navColors[index];
           // Also change the color of <p> elements within the links
-          let pElement = link.querySelector('.side-nav ul li a p');
+          let pElement = link.querySelector(".side-nav ul li a p");
           if (pElement) {
-              pElement.style.color = navColors[index];
+            pElement.style.color = navColors[index];
           }
         });
         nav_links[index].classList.add("active");
@@ -92,10 +92,21 @@ export default function ScienceFields() {
           <li>
             <a href="http://paraminnovation.org/">Home</a>
           </li>
+          <li>
+            <div id="fosLogo"></div>
+          </li>
         </ul>
       </div>
+      <div id="dSwipe"></div>
       <div className="welcome">
-        <div id="dSwipe"></div>
+        <div id="disclaimer">
+          Disclaimer : Please note that the animation featured in this
+          application is not compatible with iPhone and iPad devices.
+        </div>
+      </div>
+      <div id="ipadDisclaimer">
+        Disclaimer : Please note that the animation featured in this application
+        is not compatible with iPhone and iPad devices.
       </div>
       <div className="desktop">
         <div className="sContainer">

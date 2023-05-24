@@ -19,41 +19,41 @@ export default function Content() {
           <div>
             <div id="indianMinds" className="cardDisplay"></div>
             <div className="buttonContainer">
-              <Link to="/indian-minds" className="button">
+              <a href="https://paraminnovation.org/indian-minds/" className="button">
                 Indian Minds
-              </Link>
+              </a>
             </div>
           </div>
           <div>
             <div id="virtualZone" className="cardDisplay"></div>
             <div className="buttonContainer">
-              <Link to="/virtual-zone" className="button">
+              <a href="https://paraminnovation.org/virtual-zone/" className="button">
                 Virtual Zone
-              </Link>
+              </a>
             </div>
           </div>
           <div>
             <div id="gamingZone" className="cardDisplay"></div>
             <div className="buttonContainer">
-              <Link to="/gaming-zone" className="button">
+              <a href="https://paraminnovation.org/gaming-zone/" className="button">
                 Gaming Zone
-              </Link>
+              </a>
             </div>
           </div>
           <div>
             <div id="rangolify" className="cardDisplay"></div>
             <div className="buttonContainer">
-              <Link to="/rangolify" className="button">
+              <a href="https://paraminnovation.org/rangolify/" className="button">
                 Rangolify
-              </Link>
+              </a>
             </div>
           </div>
           <div>
             <div id="curaspace" className="cardDisplay"></div>
             <div className="buttonContainer">
-              <Link to="/curaspace" className="button">
+              <a href="https://paraminnovation.org/curaspace/" className="button">
                 Curaspace
-              </Link>
+              </a>
             </div>
           </div>
           <div>
