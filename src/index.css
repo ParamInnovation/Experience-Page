@@ -216,7 +216,7 @@
     width: max-content !important;
     border-radius: 60px;
     height: 40% !important;
-    padding: 17px 20px 20px;
+    padding: 0px 15px !important;
     align-items: center;
     display: flex;
     color: white;
