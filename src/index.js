@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import ReactDOM from "react-dom";
 import "./index.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import ScrollToTop from "./ScrollToTop";
 import Home from "./pages/Home";
 import ScienceFields from "./pages/ScienceFields";
