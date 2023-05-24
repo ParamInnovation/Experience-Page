@@ -53,27 +53,32 @@ export default function ScienceFields() {
     };
 
     function changeActiveNav() {
+      let sections, nav_links, index;
       const activeSection = document.querySelector(".active-section");
-      const sections = activeSection.querySelectorAll(".sContainer > div");
-      const nav_links = document.querySelectorAll(".side-nav ul li a");
-      let index = sections.length;
+      if (activeSection){
+        sections = activeSection.querySelectorAll(".sContainer > div");     
+        nav_links = document.querySelectorAll(".side-nav ul li a");
+        index = sections.length;   
+      }
 
       while (
         --index &&
         window.scrollY + window.innerHeight / 2 < sections[index].offsetTop
       ) {}
 
-      nav_links.forEach((link) => {
-        link.classList.remove("active");
-        // Change the color of all links
-        link.style.backgroundColor = navColors[index];
-        // Also change the color of <p> elements within the links
-        let pElement = link.querySelector('.side-nav ul li a p');
-        if (pElement) {
-            pElement.style.color = navColors[index];
-        }
-      });
-      nav_links[index].classList.add("active");
+      if(nav_links){
+        nav_links.forEach((link) => {
+          link.classList.remove("active");
+          // Change the color of all links
+          link.style.backgroundColor = navColors[index];
+          // Also change the color of <p> elements within the links
+          let pElement = link.querySelector('.side-nav ul li a p');
+          if (pElement) {
+              pElement.style.color = navColors[index];
+          }
+        });
+        nav_links[index].classList.add("active");
+      }
     }
   }, []);
 
