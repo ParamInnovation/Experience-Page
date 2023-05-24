@@ -73,7 +73,13 @@
   }
 
   .nav div {
-    display: flex;
+    display: flex; */
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  
+  .nav div p{
+    height: min-content;
   }
 
   #logo {
@@ -98,7 +104,6 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: white;
-    padding: 8% 50% 0% 4%;
   }
 
   .expTag {
@@ -206,6 +211,7 @@
 
   .button {
     background-color: #6c4ab6;
+    padding: 0px 15px;
     width: max-content !important;
     border-radius: 60px;
     height: 40% !important;
