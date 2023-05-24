@@ -57,6 +57,7 @@
   }
 
   .nav {
+    display: flex;
     height: 10%;
     position: absolute;
     background: transparent;
@@ -211,7 +212,7 @@
 
   .button {
     background-color: #6c4ab6;
-    padding: 0px 15px;
+    padding: 0px 15px !important;
     width: max-content !important;
     border-radius: 60px;
     height: 40% !important;
