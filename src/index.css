@@ -57,6 +57,7 @@
   }
 
   .nav {
+    display: flex !important;
     height: 10%;
     position: absolute;
     background: transparent;
