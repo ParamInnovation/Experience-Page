@@ -19,7 +19,10 @@ export default function Content() {
           <div>
             <div id="indianMinds" className="cardDisplay"></div>
             <div className="buttonContainer">
-              <a href="https://paraminnovation.org/indian-minds/" className="button">
+              <a
+                href="https://paraminnovation.org/indian-minds/"
+                className="button"
+              >
                 Indian Minds
               </a>
             </div>
@@ -27,7 +30,10 @@ export default function Content() {
           <div>
             <div id="virtualZone" className="cardDisplay"></div>
             <div className="buttonContainer">
-              <a href="https://paraminnovation.org/virtual-zone/" className="button">
+              <a
+                href="https://paraminnovation.org/virtual-zone/"
+                className="button"
+              >
                 Virtual Zone
               </a>
             </div>
@@ -35,15 +41,18 @@ export default function Content() {
           <div>
             <div id="gamingZone" className="cardDisplay"></div>
             <div className="buttonContainer">
-              <a href="https://paraminnovation.org/gaming-zone/" className="button">
+              <Link to="/gaming-zone" className="button">
                 Gaming Zone
-              </a>
+              </Link>
             </div>
           </div>
           <div>
             <div id="rangolify" className="cardDisplay"></div>
             <div className="buttonContainer">
-              <a href="https://paraminnovation.org/rangolify/" className="button">
+              <a
+                href="https://paraminnovation.org/rangolify/"
+                className="button"
+              >
                 Rangolify
               </a>
             </div>
@@ -51,7 +60,10 @@ export default function Content() {
           <div>
             <div id="curaspace" className="cardDisplay"></div>
             <div className="buttonContainer">
-              <a href="https://paraminnovation.org/curaspace/" className="button">
+              <a
+                href="https://paraminnovation.org/curaspace/"
+                className="button"
+              >
                 Curaspace
               </a>
             </div>

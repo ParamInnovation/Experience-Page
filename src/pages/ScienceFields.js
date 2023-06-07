@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import "../fos.css";
 
 export default function ScienceFields() {
   useEffect(() => {
@@ -87,10 +89,10 @@ export default function ScienceFields() {
       <div className="top-nav">
         <ul>
           <li id="logo">
-            <a href="#logo"></a>
+            <a href="http://paraminnovation.org/"></a>
           </li>
           <li>
-            <a href="http://paraminnovation.org/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <div id="fosLogo"></div>
