@@ -19,27 +19,25 @@ export default function Content() {
 
   return (
     <>
-      {" "}
       <div className="gmContainer">
-        <div className="gmImg">
-          <div className="gmTag">
-            <div className="heading">
-              <h1>Elements of Science</h1>
-            </div>
-            <div className="para">
-              <p>
-                Immerse yourself in our five exciting games each representing
-                the core elements of our vision.
-              </p>
-            </div>
-            <div className="buttonContainer ExploreBtn">
-              <a href="#content" className="button explore">
-                <i class="fa-solid fa-arrow-down link"></i>
-                Explore Games
-              </a>
-            </div>
+        <div className="gmTag">
+          <div className="heading">
+            <h1>Elements of Science</h1>
+          </div>
+          <div className="para">
+            <p>
+              Immerse yourself in our five exciting games each representing the
+              core elements of our vision.
+            </p>
+          </div>
+          <div className="buttonContainer ExploreBtn">
+            <a href="#content" className="button explore">
+              <i class="fa-solid fa-arrow-down link"></i>
+              Explore Games
+            </a>
           </div>
         </div>
+        <div className="gmImg"></div>
       </div>
       <div className="gmContainer2" id="content" ref={ref}>
         <div className="options">
