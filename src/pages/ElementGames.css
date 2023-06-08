@@ -12,8 +12,8 @@
     /* position: absolute; */
     top: 0;
     justify-content: space-evenly;
-    /* background-image:linear-gradient(#173254), url("../public/GamingZone/gamingZone.png"); */
-    background-image: url("../public/GamingZone/gamingZoneNew.png");
+    /* background-image:linear-gradient(#173254), url("/public/GamingZone/gamingZone.png"); */
+    background-image: url("/public/GamingZone/gamingZoneNew.png");
     width: 50%;
     height: auto;
     background-size: cover;
@@ -89,23 +89,23 @@
 }
 
 #prithvi {
-    background-image: url("../public/GamingZone/prithvi.png");
+    background-image: url("/public/GamingZone/prithvi.png");
 }
 
 #jala {
-    background-image: url("../public/GamingZone/jala.png");
+    background-image: url("/public/GamingZone/jala.png");
 }
 
 #vayu {
-    background-image: url("../public/GamingZone/vayu.png");
+    background-image: url("/public/GamingZone/vayu.png");
 }
 
 #tejas {
-    background-image: url("../public/GamingZone/tejas.png");
+    background-image: url("/public/GamingZone/tejas.png");
 }
 
 #akash {
-    background-image: url("../public/GamingZone/akash.png");
+    background-image: url("/public/GamingZone/akash.png");
 }
 
 #prithvi,

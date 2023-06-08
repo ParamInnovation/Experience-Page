@@ -61,7 +61,7 @@
     }
   
     #logo {
-      background-image: url("../public/logo.png");
+      background-image: url("/public/logo.png");
       background-size: contain;
       width: 65px;
       height: 66px;
@@ -75,7 +75,7 @@
     }
   
     #fosLogo {
-      background-image: url("../public/FOSLogo.svg");
+      background-image: url("/public/FOSLogo.svg");
       background-position: center;
       background-size: 50%;
       position: fixed;
@@ -87,7 +87,7 @@
     }
   
     #dSwipe {
-      background: url("../public/swipe.svg");
+      background: url("/public/swipe.svg");
       background-position: center;
       background-size: 90%;
       position: fixed;
@@ -105,318 +105,318 @@
     }
   
     .first {
-      background-image: url('../public/Back/Bg1.svg');
+      background-image: url('/public/Back/Bg1.svg');
       background-color: #352b5f;
     }
   
     .first .story #title {
-      background: url('../public/SpObjects/Tit1.svg');
+      background: url('/public/SpObjects/Tit1.svg');
     }
   
     .first .story #img {
-      background: url('../public/SpObjects/Img1.svg');
+      background: url('/public/SpObjects/Img1.svg');
     }
   
     .first .story #num {
-      background: url('../public/SpObjects/Num1.svg');
+      background: url('/public/SpObjects/Num1.svg');
     }
   
     .first .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt1.svg');
+      background: url('/public/SpObjects/Dtxt1.svg');
     }
   
     .second {
-      background-image: url("../public/Back/Bg2.svg");
+      background-image: url("/public/Back/Bg2.svg");
       background-color: #e5e3f1;
     }
   
     .second .story #title {
-      background: url('../public/SpObjects/Tit2.svg');
+      background: url('/public/SpObjects/Tit2.svg');
     }
   
     .second .story #img {
-      background: url('../public/SpObjects/Img2.svg');
+      background: url('/public/SpObjects/Img2.svg');
     }
   
     .second .story #num {
-      background: url('../public/SpObjects/Num2.svg');
+      background: url('/public/SpObjects/Num2.svg');
     }
   
     .second .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt2.svg');
+      background: url('/public/SpObjects/Dtxt2.svg');
     }
   
     .third {
-      background-image: url('../public/Back/Bg3.svg');
+      background-image: url('/public/Back/Bg3.svg');
       background-color: #eae5f1;
     }
   
     .third .story #title {
-      background: url('../public/SpObjects/Tit3.svg');
+      background: url('/public/SpObjects/Tit3.svg');
     }
   
     .third .story #img {
-      background: url('../public/SpObjects/Img3.svg');
+      background: url('/public/SpObjects/Img3.svg');
     }
   
     .third .story #num {
-      background: url('../public/SpObjects/Num3.svg');
+      background: url('/public/SpObjects/Num3.svg');
     }
   
     .third .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt3.svg');
+      background: url('/public/SpObjects/Dtxt3.svg');
     }
   
     .fourth {
-      background-image: url("../public/Back/Bg4.svg");
+      background-image: url("/public/Back/Bg4.svg");
       background-color: #ffd2c5;
     }
   
     .fourth .story #title {
-      background: url('../public/SpObjects/Tit4.svg');
+      background: url('/public/SpObjects/Tit4.svg');
     }
   
     .fourth .story #img {
-      background: url('../public/SpObjects/Img4.svg');
+      background: url('/public/SpObjects/Img4.svg');
     }
   
     .fourth .story #num {
-      background: url('../public/SpObjects/Num4.svg');
+      background: url('/public/SpObjects/Num4.svg');
     }
   
     .fourth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt4.svg');
+      background: url('/public/SpObjects/Dtxt4.svg');
     }
   
     .fifth {
-      background-image: url("../public/Back/Bg5.svg");
+      background-image: url("/public/Back/Bg5.svg");
       background-color: #ffd2c5;
     }
   
     .fifth .story #title {
-      background: url('../public/SpObjects/Tit5.svg');
+      background: url('/public/SpObjects/Tit5.svg');
     }
   
     .fifth .story #img {
-      background: url('../public/SpObjects/Img5.svg');
+      background: url('/public/SpObjects/Img5.svg');
     }
   
     .fifth .story #num {
-      background: url('../public/SpObjects/Num5.svg');
+      background: url('/public/SpObjects/Num5.svg');
     }
   
     .fifth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt5.svg');
+      background: url('/public/SpObjects/Dtxt5.svg');
     }
   
     .sixth {
-      background-image: url("../public/Back/Bg6.svg");
+      background-image: url("/public/Back/Bg6.svg");
       background-color: #ffd2c5;
     }
   
     .sixth .story #title {
-      background: url('../public/SpObjects/Tit6.svg');
+      background: url('/public/SpObjects/Tit6.svg');
     }
   
     .sixth .story #img {
-      background: url('../public/SpObjects/Img6.svg');
+      background: url('/public/SpObjects/Img6.svg');
     }
   
     .sixth .story #num {
-      background: url('../public/SpObjects/Num6.svg');
+      background: url('/public/SpObjects/Num6.svg');
     }
   
     .sixth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt6.svg');
+      background: url('/public/SpObjects/Dtxt6.svg');
     }
   
     .seventh {
-      background-image: url("../public/Back/Bg7.svg");
+      background-image: url("/public/Back/Bg7.svg");
       background-color: #ffd2c5;
     }
   
     .seventh .story #title {
-      background: url('../public/SpObjects/Tit7.svg');
+      background: url('/public/SpObjects/Tit7.svg');
     }
   
     .seventh .story #img {
-      background: url('../public/SpObjects/Img7.svg');
+      background: url('/public/SpObjects/Img7.svg');
     }
   
     .seventh .story #num {
-      background: url('../public/SpObjects/Num7.svg');
+      background: url('/public/SpObjects/Num7.svg');
     }
   
     .seventh .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt7.svg');
+      background: url('/public/SpObjects/Dtxt7.svg');
     }
   
     .eight {
-      background-image: url("../public/Back/Bg8.svg");
+      background-image: url("/public/Back/Bg8.svg");
       background-color: #ffd2c5;
     }
   
     .eight .story #title {
-      background: url('../public/SpObjects/Tit8.svg');
+      background: url('/public/SpObjects/Tit8.svg');
     }
   
     .eight .story #img {
-      background: url('../public/SpObjects/Img8.svg');
+      background: url('/public/SpObjects/Img8.svg');
     }
   
     .eight .story #num {
-      background: url('../public/SpObjects/Num8.svg');
+      background: url('/public/SpObjects/Num8.svg');
     }
   
     .eight .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt8.svg');
+      background: url('/public/SpObjects/Dtxt8.svg');
     }
   
     .ninth {
-      background-image: url("../public/Back/Bg9.svg");
+      background-image: url("/public/Back/Bg9.svg");
       background-color: #ffd2c5;
     }
   
     .ninth .story #title {
-      background: url('../public/SpObjects/Tit9.svg');
+      background: url('/public/SpObjects/Tit9.svg');
     }
   
     .ninth .story #img {
-      background: url('../public/SpObjects/Img9.svg');
+      background: url('/public/SpObjects/Img9.svg');
     }
   
     .ninth .story #num {
-      background: url('../public/SpObjects/Num9.svg');
+      background: url('/public/SpObjects/Num9.svg');
     }
   
     .ninth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt9.svg');
+      background: url('/public/SpObjects/Dtxt9.svg');
     }
   
     .tenth {
-      background-image: url("../public/Back/Bg10.svg");
+      background-image: url("/public/Back/Bg10.svg");
       background-color: #ffd2c5;
     }
   
     .tenth .story #title {
-      background: url('../public/SpObjects/Tit10.svg');
+      background: url('/public/SpObjects/Tit10.svg');
     }
   
     .tenth .story #img {
-      background: url('../public/SpObjects/Img10.svg');
+      background: url('/public/SpObjects/Img10.svg');
     }
   
     .tenth .story #num {
-      background: url('../public/SpObjects/Num10.svg');
+      background: url('/public/SpObjects/Num10.svg');
     }
   
     .tenth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt10.svg');
+      background: url('/public/SpObjects/Dtxt10.svg');
     }
   
     .eleventh {
-      background-image: url("../public/Back/Bg11.svg");
+      background-image: url("/public/Back/Bg11.svg");
       background-color: #ffd2c5;
     }
   
     .eleventh .story #title {
-      background: url('../public/SpObjects/Tit11.svg');
+      background: url('/public/SpObjects/Tit11.svg');
     }
   
     .eleventh .story #img {
-      background: url('../public/SpObjects/Img11.svg');
+      background: url('/public/SpObjects/Img11.svg');
     }
   
     .eleventh .story #num {
-      background: url('../public/SpObjects/Num11.svg');
+      background: url('/public/SpObjects/Num11.svg');
     }
   
     .eleventh .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt11.svg');
+      background: url('/public/SpObjects/Dtxt11.svg');
     }
   
     .twelfth {
-      background-image: url("../public/Back/Bg12.svg");
+      background-image: url("/public/Back/Bg12.svg");
       background-color: #ffd2c5;
     }
   
     .twelfth .story #title {
-      background: url('../public/SpObjects/Tit12.svg');
+      background: url('/public/SpObjects/Tit12.svg');
     }
   
     .twelfth .story #img {
-      background: url('../public/SpObjects/Img12.svg');
+      background: url('/public/SpObjects/Img12.svg');
     }
   
     .twelfth .story #num {
-      background: url('../public/SpObjects/Num12.svg');
+      background: url('/public/SpObjects/Num12.svg');
     }
   
     .twelfth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt12.svg');
+      background: url('/public/SpObjects/Dtxt12.svg');
     }
   
     .thirteenth {
-      background-image: url("../public/Back/Bg13.svg");
+      background-image: url("/public/Back/Bg13.svg");
       background-color: #ffd2c5;
     }
   
     .thirteenth .story #title {
-      background: url('../public/SpObjects/Tit13.svg');
+      background: url('/public/SpObjects/Tit13.svg');
     }
   
     .thirteenth .story #img {
-      background: url('../public/SpObjects/Img13.svg');
+      background: url('/public/SpObjects/Img13.svg');
     }
   
     .thirteenth .story #num {
-      background: url('../public/SpObjects/Num13.svg');
+      background: url('/public/SpObjects/Num13.svg');
     }
   
     .thirteenth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt13.svg');
+      background: url('/public/SpObjects/Dtxt13.svg');
     }
   
     .fourtheenth {
-      background-image: url("../public/Back/Bg14.svg");
+      background-image: url("/public/Back/Bg14.svg");
       background-color: #ffd2c5;
     }
   
     .fourtheenth .story #title {
-      background: url('../public/SpObjects/Tit14.svg');
+      background: url('/public/SpObjects/Tit14.svg');
     }
   
     .fourtheenth .story #img {
-      background: url('../public/SpObjects/Img14.svg');
+      background: url('/public/SpObjects/Img14.svg');
     }
   
     .fourtheenth .story #num {
-      background: url('../public/SpObjects/Num14.svg');
+      background: url('/public/SpObjects/Num14.svg');
     }
   
     .fourtheenth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt14.svg');
+      background: url('/public/SpObjects/Dtxt14.svg');
     }
   
     .fifteenth {
-      background-image: url("../public/Back/Bg15.svg");
+      background-image: url("/public/Back/Bg15.svg");
       background-color: #ffd2c5;
     }
   
     .fifteenth .story #title {
-      background: url('../public/SpObjects/Tit15.svg');
+      background: url('/public/SpObjects/Tit15.svg');
     }
   
     .fifteenth .story #img {
-      background: url('../public/SpObjects/Img15.svg');
+      background: url('/public/SpObjects/Img15.svg');
     }
   
     .fifteenth .story #num {
-      background: url('../public/SpObjects/Num15.svg');
+      background: url('/public/SpObjects/Num15.svg');
     }
   
     .fifteenth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt15.svg');
+      background: url('/public/SpObjects/Dtxt15.svg');
     }
   
     .first,
@@ -573,127 +573,127 @@
     /******************************************  Mobile view  ******************************************/
   
     .mobile .sContainer .first {
-      background-image: url("../public/MBack/PBg1.svg");
+      background-image: url("/public/MBack/PBg1.svg");
     }
   
     .mobile .sContainer .second {
-      background-image: url("../public/MBack/PBg2.svg");
+      background-image: url("/public/MBack/PBg2.svg");
     }
   
     .mobile .sContainer .third {
-      background-image: url("../public/MBack/PBg3.svg");
+      background-image: url("/public/MBack/PBg3.svg");
     }
   
     .mobile .sContainer .fourth {
-      background-image: url("../public/MBack/PBg4.svg");
+      background-image: url("/public/MBack/PBg4.svg");
     }
   
     .mobile .sContainer .fifth {
-      background-image: url("../public/MBack/PBg5.svg");
+      background-image: url("/public/MBack/PBg5.svg");
     }
   
     .mobile .sContainer .sixth {
-      background-image: url("../public/MBack/PBg6.svg");
+      background-image: url("/public/MBack/PBg6.svg");
     }
   
     .mobile .sContainer .seventh {
-      background-image: url("../public/MBack/PBg7.svg");
+      background-image: url("/public/MBack/PBg7.svg");
     }
   
     .mobile .sContainer .eight {
-      background-image: url("../public/MBack/PBg8.svg");
+      background-image: url("/public/MBack/PBg8.svg");
     }
   
     .mobile .sContainer .ninth {
-      background-image: url("../public/MBack/PBg9.svg");
+      background-image: url("/public/MBack/PBg9.svg");
     }
   
     .mobile .sContainer .tenth {
-      background-image: url("../public/MBack/PBg10.svg");
+      background-image: url("/public/MBack/PBg10.svg");
     }
   
     .mobile .sContainer .eleventh {
-      background-image: url("../public/MBack/PBg11.svg");
+      background-image: url("/public/MBack/PBg11.svg");
     }
   
     .mobile .sContainer .twelfth {
-      background-image: url("../public/MBack/PBg12.svg");
+      background-image: url("/public/MBack/PBg12.svg");
     }
   
     .mobile .sContainer .thirteenth {
-      background-image: url("../public/MBack/PBg13.svg");
+      background-image: url("/public/MBack/PBg13.svg");
       background-size: cover !important
     }
   
     .mobile .sContainer .fourtheenth {
-      background-image: url("../public/MBack/PBg14.svg");
+      background-image: url("/public/MBack/PBg14.svg");
       background-size: cover !important
     }
   
     .mobile .sContainer .fifteenth {
-      background-image: url("../public/MBack/PBg15.svg");
+      background-image: url("/public/MBack/PBg15.svg");
       background-size: cover !important
     }
   
     /*  Mobile view Title   */
     .first .m-story #title {
-      background-image: url("../public/SpObjects/Tit1.svg");
+      background-image: url("/public/SpObjects/Tit1.svg");
     }
   
     .second .m-story #title {
-      background-image: url("../public/SpObjects/Tit2.svg");
+      background-image: url("/public/SpObjects/Tit2.svg");
     }
   
     .third .m-story #title {
-      background-image: url("../public/SpObjects/Tit3.svg");
+      background-image: url("/public/SpObjects/Tit3.svg");
     }
   
     .fourth .m-story #title {
-      background-image: url("../public/SpObjects/Tit4.svg");
+      background-image: url("/public/SpObjects/Tit4.svg");
     }
   
     .fifth .m-story #title {
-      background-image: url("../public/SpObjects/Tit5.svg");
+      background-image: url("/public/SpObjects/Tit5.svg");
     }
   
     .sixth .m-story #title {
-      background-image: url("../public/SpObjects/Tit6.svg");
+      background-image: url("/public/SpObjects/Tit6.svg");
     }
   
     .seventh .m-story #title {
-      background-image: url("../public/SpObjects/Tit7.svg");
+      background-image: url("/public/SpObjects/Tit7.svg");
     }
   
     .eight .m-story #title {
-      background-image: url("../public/SpObjects/Tit8.svg");
+      background-image: url("/public/SpObjects/Tit8.svg");
     }
   
     .ninth .m-story #title {
-      background-image: url("../public/SpObjects/Tit9.svg");
+      background-image: url("/public/SpObjects/Tit9.svg");
     }
   
     .tenth .m-story #title {
-      background-image: url("../public/SpObjects/Tit10.svg");
+      background-image: url("/public/SpObjects/Tit10.svg");
     }
   
     .eleventh .m-story #title {
-      background-image: url("../public/SpObjects/Tit11.svg");
+      background-image: url("/public/SpObjects/Tit11.svg");
     }
   
     .twelfth .m-story #title {
-      background-image: url("../public/SpObjects/Tit12.svg");
+      background-image: url("/public/SpObjects/Tit12.svg");
     }
   
     .thirteenth .m-story #title {
-      background-image: url("../public/SpObjects/Tit13.svg");
+      background-image: url("/public/SpObjects/Tit13.svg");
     }
   
     .fourtheenth .m-story #title {
-      background-image: url("../public/SpObjects/Tit14.svg");
+      background-image: url("/public/SpObjects/Tit14.svg");
     }
   
     .fifteenth .m-story #title {
-      background-image: url("../public/SpObjects/Tit15.svg");
+      background-image: url("/public/SpObjects/Tit15.svg");
     }
   
     .first .m-story #title,
@@ -726,63 +726,63 @@
     /*  Mobile view Img   */
   
     .first .m-story #img {
-      background-image: url("../public/SpObjects/Img1.svg");
+      background-image: url("/public/SpObjects/Img1.svg");
     }
   
     .second .m-story #img {
-      background-image: url("../public/SpObjects/Img2.svg");
+      background-image: url("/public/SpObjects/Img2.svg");
     }
   
     .third .m-story #img {
-      background-image: url("../public/SpObjects/Img3.svg");
+      background-image: url("/public/SpObjects/Img3.svg");
     }
   
     .fourth .m-story #img {
-      background-image: url("../public/SpObjects/Img4.svg");
+      background-image: url("/public/SpObjects/Img4.svg");
     }
   
     .fifth .m-story #img {
-      background-image: url("../public/SpObjects/Img5.svg");
+      background-image: url("/public/SpObjects/Img5.svg");
     }
   
     .sixth .m-story #img {
-      background-image: url("../public/SpObjects/Img6.svg");
+      background-image: url("/public/SpObjects/Img6.svg");
     }
   
     .seventh .m-story #img {
-      background-image: url("../public/SpObjects/Img7.svg");
+      background-image: url("/public/SpObjects/Img7.svg");
     }
   
     .eight .m-story #img {
-      background-image: url("../public/SpObjects/Img8.svg");
+      background-image: url("/public/SpObjects/Img8.svg");
     }
   
     .ninth .m-story #img {
-      background-image: url("../public/SpObjects/Img9.svg");
+      background-image: url("/public/SpObjects/Img9.svg");
     }
   
     .tenth .m-story #img {
-      background-image: url("../public/SpObjects/Img10.svg");
+      background-image: url("/public/SpObjects/Img10.svg");
     }
   
     .eleventh .m-story #img {
-      background-image: url("../public/SpObjects/Img11.svg");
+      background-image: url("/public/SpObjects/Img11.svg");
     }
   
     .twelfth .m-story #img {
-      background-image: url("../public/SpObjects/Img12.svg");
+      background-image: url("/public/SpObjects/Img12.svg");
     }
   
     .thirteenth .m-story #img {
-      background-image: url("../public/SpObjects/Img13.svg");
+      background-image: url("/public/SpObjects/Img13.svg");
     }
   
     .fourtheenth .m-story #img {
-      background-image: url("../public/SpObjects/Img14.svg");
+      background-image: url("/public/SpObjects/Img14.svg");
     }
   
     .fifteenth .m-story #img {
-      background-image: url("../public/SpObjects/Img15.svg");
+      background-image: url("/public/SpObjects/Img15.svg");
     }
   
     .first .m-story #img,
@@ -815,63 +815,63 @@
     /*  Mobile view Num   */
   
     .first .m-story #num {
-      background-image: url("../public/SpObjects/Num1.svg");
+      background-image: url("/public/SpObjects/Num1.svg");
     }
   
     .second .m-story #num {
-      background-image: url("../public/SpObjects/Num2.svg");
+      background-image: url("/public/SpObjects/Num2.svg");
     }
   
     .third .m-story #num {
-      background-image: url("../public/SpObjects/Num3.svg");
+      background-image: url("/public/SpObjects/Num3.svg");
     }
   
     .fourth .m-story #num {
-      background-image: url("../public/SpObjects/Num4.svg");
+      background-image: url("/public/SpObjects/Num4.svg");
     }
   
     .fifth .m-story #num {
-      background-image: url("../public/SpObjects/Num5.svg");
+      background-image: url("/public/SpObjects/Num5.svg");
     }
   
     .sixth .m-story #num {
-      background-image: url("../public/SpObjects/Num6.svg");
+      background-image: url("/public/SpObjects/Num6.svg");
     }
   
     .seventh .m-story #num {
-      background-image: url("../public/SpObjects/Num7.svg");
+      background-image: url("/public/SpObjects/Num7.svg");
     }
   
     .eight .m-story #num {
-      background-image: url("../public/SpObjects/Num8.svg");
+      background-image: url("/public/SpObjects/Num8.svg");
     }
   
     .ninth .m-story #num {
-      background-image: url("../public/SpObjects/Num9.svg");
+      background-image: url("/public/SpObjects/Num9.svg");
     }
   
     .tenth .m-story #num {
-      background-image: url("../public/SpObjects/Num10.svg");
+      background-image: url("/public/SpObjects/Num10.svg");
     }
   
     .eleventh .m-story #num {
-      background-image: url("../public/SpObjects/Num11.svg");
+      background-image: url("/public/SpObjects/Num11.svg");
     }
   
     .twelfth .m-story #num {
-      background-image: url("../public/SpObjects/Num12.svg");
+      background-image: url("/public/SpObjects/Num12.svg");
     }
   
     .thirteenth .m-story #num {
-      background-image: url("../public/SpObjects/Num13.svg");
+      background-image: url("/public/SpObjects/Num13.svg");
     }
   
     .fourtheenth .m-story #num {
-      background-image: url("../public/SpObjects/Num14.svg");
+      background-image: url("/public/SpObjects/Num14.svg");
     }
   
     .fifteenth .m-story #num {
-      background-image: url("../public/SpObjects/Num15.svg");
+      background-image: url("/public/SpObjects/Num15.svg");
     }
   
     .first .m-story #num,
@@ -916,75 +916,75 @@
     }
   
     .first .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt1.svg"); */
-      background: url("../public/SpObjects/Mtxt1.svg");
+      /* background: url("/public/DesktopTxt/Txt1.svg"); */
+      background: url("/public/SpObjects/Mtxt1.svg");
     }
   
     .second .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt2.svg"); */
-      background: url("../public/SpObjects/Mtxt2.svg");
+      /* background: url("/public/DesktopTxt/Txt2.svg"); */
+      background: url("/public/SpObjects/Mtxt2.svg");
     }
   
     .third .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt3.svg"); */
-      background: url("../public/SpObjects/Mtxt3.svg");
+      /* background: url("/public/DesktopTxt/Txt3.svg"); */
+      background: url("/public/SpObjects/Mtxt3.svg");
     }
   
     .fourth .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt4.svg"); */
-      background: url("../public/SpObjects/Mtxt4.svg");
+      /* background: url("/public/DesktopTxt/Txt4.svg"); */
+      background: url("/public/SpObjects/Mtxt4.svg");
     }
   
     .fifth .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt5.svg"); */
-      background: url("../public/SpObjects/Mtxt5.svg");
+      /* background: url("/public/DesktopTxt/Txt5.svg"); */
+      background: url("/public/SpObjects/Mtxt5.svg");
     }
   
     .sixth .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt6.svg"); */
-      background: url("../public/SpObjects/Mtxt6.svg");
+      /* background: url("/public/DesktopTxt/Txt6.svg"); */
+      background: url("/public/SpObjects/Mtxt6.svg");
     }
   
     .seventh .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt7.svg"); */
-      background: url("../public/SpObjects/Mtxt7.svg");
+      /* background: url("/public/DesktopTxt/Txt7.svg"); */
+      background: url("/public/SpObjects/Mtxt7.svg");
     }
   
     .eight .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt8.svg"); */
-      background: url("../public/SpObjects/Mtxt8.svg");
+      /* background: url("/public/DesktopTxt/Txt8.svg"); */
+      background: url("/public/SpObjects/Mtxt8.svg");
     }
   
     .ninth .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt9.svg"); */
-      background: url("../public/SpObjects/Mtxt9.svg");
+      /* background: url("/public/DesktopTxt/Txt9.svg"); */
+      background: url("/public/SpObjects/Mtxt9.svg");
     }
   
     .tenth .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt10.svg"); */
-      background: url("../public/SpObjects/Mtxt10.svg");
+      /* background: url("/public/DesktopTxt/Txt10.svg"); */
+      background: url("/public/SpObjects/Mtxt10.svg");
     }
   
     .eleventh .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt11.svg"); */
-      background: url("../public/SpObjects/Mtxt11.svg");
+      /* background: url("/public/DesktopTxt/Txt11.svg"); */
+      background: url("/public/SpObjects/Mtxt11.svg");
     }
   
     .twelfth .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt12.svg"); */
-      background: url("../public/SpObjects/Mtxt12.svg");
+      /* background: url("/public/DesktopTxt/Txt12.svg"); */
+      background: url("/public/SpObjects/Mtxt12.svg");
     }
   
     .thirteenth .m-story #paraContainer {
-      background: url("../public/SpObjects/Mtxt13.svg");
+      background: url("/public/SpObjects/Mtxt13.svg");
     }
   
     .fourtheenth .m-story #paraContainer {
-      background: url("../public/SpObjects/Mtxt14.svg");
+      background: url("/public/SpObjects/Mtxt14.svg");
     }
   
     .fifteenth .m-story #paraContainer {
-      background: url("../public/SpObjects/Mtxt15.svg");
+      background: url("/public/SpObjects/Mtxt15.svg");
     }
   
     @media screen and (max-width: 925px) {
@@ -1027,7 +1027,7 @@
       }
   
       #logo {
-        background-image: url("../public/logo.png");
+        background-image: url("/public/logo.png");
         background-size: contain;
         width: 45px;
         background-repeat: no-repeat;
@@ -1038,7 +1038,7 @@
         height: 100%;
         position: inherit;
         width: 100%;
-        background: url("../public/ExperiencePage/Fos.png");
+        background: url("/public/ExperiencePage/Fos.png");
         background-size: cover;
         background-position: center;
       }
@@ -1122,7 +1122,7 @@
     }
   
     #logo {
-      background-image: url("../public/logo.png");
+      background-image: url("/public/logo.png");
       background-size: contain;
       width: 65px;
       height: 66px;
@@ -1136,7 +1136,7 @@
     }
   
     #fosLogo {
-      background-image: url("../public/FOSLogo.svg");
+      background-image: url("/public/FOSLogo.svg");
       background-position: center;
       background-size: 50%;
       position: fixed;
@@ -1148,7 +1148,7 @@
     }
   
     #dSwipe {
-      background: url("../public/swipe.svg");
+      background: url("/public/swipe.svg");
       background-position: center;
       background-size: 90%;
       position: fixed;
@@ -1166,318 +1166,318 @@
     }
   
     .first {
-      background-image: url('../public/Back/Bg1.svg');
+      background-image: url('/public/Back/Bg1.svg');
       background-color: #352b5f;
     }
   
     .first .story #title {
-      background: url('../public/SpObjects/Tit1.svg');
+      background: url('/public/SpObjects/Tit1.svg');
     }
   
     .first .story #img {
-      background: url('../public/SpObjects/Img1.svg');
+      background: url('/public/SpObjects/Img1.svg');
     }
   
     .first .story #num {
-      background: url('../public/SpObjects/Num1.svg');
+      background: url('/public/SpObjects/Num1.svg');
     }
   
     .first .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt1.svg');
+      background: url('/public/SpObjects/Dtxt1.svg');
     }
   
     .second {
-      background-image: url("../public/Back/Bg2.svg");
+      background-image: url("/public/Back/Bg2.svg");
       background-color: #e5e3f1;
     }
   
     .second .story #title {
-      background: url('../public/SpObjects/Tit2.svg');
+      background: url('/public/SpObjects/Tit2.svg');
     }
   
     .second .story #img {
-      background: url('../public/SpObjects/Img2.svg');
+      background: url('/public/SpObjects/Img2.svg');
     }
   
     .second .story #num {
-      background: url('../public/SpObjects/Num2.svg');
+      background: url('/public/SpObjects/Num2.svg');
     }
   
     .second .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt2.svg');
+      background: url('/public/SpObjects/Dtxt2.svg');
     }
   
     .third {
-      background-image: url('../public/Back/Bg3.svg');
+      background-image: url('/public/Back/Bg3.svg');
       background-color: #eae5f1;
     }
   
     .third .story #title {
-      background: url('../public/SpObjects/Tit3.svg');
+      background: url('/public/SpObjects/Tit3.svg');
     }
   
     .third .story #img {
-      background: url('../public/SpObjects/Img3.svg');
+      background: url('/public/SpObjects/Img3.svg');
     }
   
     .third .story #num {
-      background: url('../public/SpObjects/Num3.svg');
+      background: url('/public/SpObjects/Num3.svg');
     }
   
     .third .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt3.svg');
+      background: url('/public/SpObjects/Dtxt3.svg');
     }
   
     .fourth {
-      background-image: url("../public/Back/Bg4.svg");
+      background-image: url("/public/Back/Bg4.svg");
       background-color: #ffd2c5;
     }
   
     .fourth .story #title {
-      background: url('../public/SpObjects/Tit4.svg');
+      background: url('/public/SpObjects/Tit4.svg');
     }
   
     .fourth .story #img {
-      background: url('../public/SpObjects/Img4.svg');
+      background: url('/public/SpObjects/Img4.svg');
     }
   
     .fourth .story #num {
-      background: url('../public/SpObjects/Num4.svg');
+      background: url('/public/SpObjects/Num4.svg');
     }
   
     .fourth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt4.svg');
+      background: url('/public/SpObjects/Dtxt4.svg');
     }
   
     .fifth {
-      background-image: url("../public/Back/Bg5.svg");
+      background-image: url("/public/Back/Bg5.svg");
       background-color: #ffd2c5;
     }
   
     .fifth .story #title {
-      background: url('../public/SpObjects/Tit5.svg');
+      background: url('/public/SpObjects/Tit5.svg');
     }
   
     .fifth .story #img {
-      background: url('../public/SpObjects/Img5.svg');
+      background: url('/public/SpObjects/Img5.svg');
     }
   
     .fifth .story #num {
-      background: url('../public/SpObjects/Num5.svg');
+      background: url('/public/SpObjects/Num5.svg');
     }
   
     .fifth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt5.svg');
+      background: url('/public/SpObjects/Dtxt5.svg');
     }
   
     .sixth {
-      background-image: url("../public/Back/Bg6.svg");
+      background-image: url("/public/Back/Bg6.svg");
       background-color: #ffd2c5;
     }
   
     .sixth .story #title {
-      background: url('../public/SpObjects/Tit6.svg');
+      background: url('/public/SpObjects/Tit6.svg');
     }
   
     .sixth .story #img {
-      background: url('../public/SpObjects/Img6.svg');
+      background: url('/public/SpObjects/Img6.svg');
     }
   
     .sixth .story #num {
-      background: url('../public/SpObjects/Num6.svg');
+      background: url('/public/SpObjects/Num6.svg');
     }
   
     .sixth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt6.svg');
+      background: url('/public/SpObjects/Dtxt6.svg');
     }
   
     .seventh {
-      background-image: url("../public/Back/Bg7.svg");
+      background-image: url("/public/Back/Bg7.svg");
       background-color: #ffd2c5;
     }
   
     .seventh .story #title {
-      background: url('../public/SpObjects/Tit7.svg');
+      background: url('/public/SpObjects/Tit7.svg');
     }
   
     .seventh .story #img {
-      background: url('../public/SpObjects/Img7.svg');
+      background: url('/public/SpObjects/Img7.svg');
     }
   
     .seventh .story #num {
-      background: url('../public/SpObjects/Num7.svg');
+      background: url('/public/SpObjects/Num7.svg');
     }
   
     .seventh .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt7.svg');
+      background: url('/public/SpObjects/Dtxt7.svg');
     }
   
     .eight {
-      background-image: url("../public/Back/Bg8.svg");
+      background-image: url("/public/Back/Bg8.svg");
       background-color: #ffd2c5;
     }
   
     .eight .story #title {
-      background: url('../public/SpObjects/Tit8.svg');
+      background: url('/public/SpObjects/Tit8.svg');
     }
   
     .eight .story #img {
-      background: url('../public/SpObjects/Img8.svg');
+      background: url('/public/SpObjects/Img8.svg');
     }
   
     .eight .story #num {
-      background: url('../public/SpObjects/Num8.svg');
+      background: url('/public/SpObjects/Num8.svg');
     }
   
     .eight .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt8.svg');
+      background: url('/public/SpObjects/Dtxt8.svg');
     }
   
     .ninth {
-      background-image: url("../public/Back/Bg9.svg");
+      background-image: url("/public/Back/Bg9.svg");
       background-color: #ffd2c5;
     }
   
     .ninth .story #title {
-      background: url('../public/SpObjects/Tit9.svg');
+      background: url('/public/SpObjects/Tit9.svg');
     }
   
     .ninth .story #img {
-      background: url('../public/SpObjects/Img9.svg');
+      background: url('/public/SpObjects/Img9.svg');
     }
   
     .ninth .story #num {
-      background: url('../public/SpObjects/Num9.svg');
+      background: url('/public/SpObjects/Num9.svg');
     }
   
     .ninth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt9.svg');
+      background: url('/public/SpObjects/Dtxt9.svg');
     }
   
     .tenth {
-      background-image: url("../public/Back/Bg10.svg");
+      background-image: url("/public/Back/Bg10.svg");
       background-color: #ffd2c5;
     }
   
     .tenth .story #title {
-      background: url('../public/SpObjects/Tit10.svg');
+      background: url('/public/SpObjects/Tit10.svg');
     }
   
     .tenth .story #img {
-      background: url('../public/SpObjects/Img10.svg');
+      background: url('/public/SpObjects/Img10.svg');
     }
   
     .tenth .story #num {
-      background: url('../public/SpObjects/Num10.svg');
+      background: url('/public/SpObjects/Num10.svg');
     }
   
     .tenth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt10.svg');
+      background: url('/public/SpObjects/Dtxt10.svg');
     }
   
     .eleventh {
-      background-image: url("../public/Back/Bg11.svg");
+      background-image: url("/public/Back/Bg11.svg");
       background-color: #ffd2c5;
     }
   
     .eleventh .story #title {
-      background: url('../public/SpObjects/Tit11.svg');
+      background: url('/public/SpObjects/Tit11.svg');
     }
   
     .eleventh .story #img {
-      background: url('../public/SpObjects/Img11.svg');
+      background: url('/public/SpObjects/Img11.svg');
     }
   
     .eleventh .story #num {
-      background: url('../public/SpObjects/Num11.svg');
+      background: url('/public/SpObjects/Num11.svg');
     }
   
     .eleventh .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt11.svg');
+      background: url('/public/SpObjects/Dtxt11.svg');
     }
   
     .twelfth {
-      background-image: url("../public/Back/Bg12.svg");
+      background-image: url("/public/Back/Bg12.svg");
       background-color: #ffd2c5;
     }
   
     .twelfth .story #title {
-      background: url('../public/SpObjects/Tit12.svg');
+      background: url('/public/SpObjects/Tit12.svg');
     }
   
     .twelfth .story #img {
-      background: url('../public/SpObjects/Img12.svg');
+      background: url('/public/SpObjects/Img12.svg');
     }
   
     .twelfth .story #num {
-      background: url('../public/SpObjects/Num12.svg');
+      background: url('/public/SpObjects/Num12.svg');
     }
   
     .twelfth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt12.svg');
+      background: url('/public/SpObjects/Dtxt12.svg');
     }
   
     .thirteenth {
-      background-image: url("../public/Back/Bg13.svg");
+      background-image: url("/public/Back/Bg13.svg");
       background-color: #ffd2c5;
     }
   
     .thirteenth .story #title {
-      background: url('../public/SpObjects/Tit13.svg');
+      background: url('/public/SpObjects/Tit13.svg');
     }
   
     .thirteenth .story #img {
-      background: url('../public/SpObjects/Img13.svg');
+      background: url('/public/SpObjects/Img13.svg');
     }
   
     .thirteenth .story #num {
-      background: url('../public/SpObjects/Num13.svg');
+      background: url('/public/SpObjects/Num13.svg');
     }
   
     .thirteenth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt13.svg');
+      background: url('/public/SpObjects/Dtxt13.svg');
     }
   
     .fourtheenth {
-      background-image: url("../public/Back/Bg14.svg");
+      background-image: url("/public/Back/Bg14.svg");
       background-color: #ffd2c5;
     }
   
     .fourtheenth .story #title {
-      background: url('../public/SpObjects/Tit14.svg');
+      background: url('/public/SpObjects/Tit14.svg');
     }
   
     .fourtheenth .story #img {
-      background: url('../public/SpObjects/Img14.svg');
+      background: url('/public/SpObjects/Img14.svg');
     }
   
     .fourtheenth .story #num {
-      background: url('../public/SpObjects/Num14.svg');
+      background: url('/public/SpObjects/Num14.svg');
     }
   
     .fourtheenth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt14.svg');
+      background: url('/public/SpObjects/Dtxt14.svg');
     }
   
     .fifteenth {
-      background-image: url("../public/Back/Bg15.svg");
+      background-image: url("/public/Back/Bg15.svg");
       background-color: #ffd2c5;
     }
   
     .fifteenth .story #title {
-      background: url('../public/SpObjects/Tit15.svg');
+      background: url('/public/SpObjects/Tit15.svg');
     }
   
     .fifteenth .story #img {
-      background: url('../public/SpObjects/Img15.svg');
+      background: url('/public/SpObjects/Img15.svg');
     }
   
     .fifteenth .story #num {
-      background: url('../public/SpObjects/Num15.svg');
+      background: url('/public/SpObjects/Num15.svg');
     }
   
     .fifteenth .story #paraContainer {
-      background: url('../public/SpObjects/Dtxt15.svg');
+      background: url('/public/SpObjects/Dtxt15.svg');
     }
   
     .first,
@@ -1634,127 +1634,127 @@
     /******************************************  Mobile view  ******************************************/
   
     .mobile .sContainer .first {
-      background-image: url("../public/MBack/PBg1.svg");
+      background-image: url("/public/MBack/PBg1.svg");
     }
   
     .mobile .sContainer .second {
-      background-image: url("../public/MBack/PBg2.svg");
+      background-image: url("/public/MBack/PBg2.svg");
     }
   
     .mobile .sContainer .third {
-      background-image: url("../public/MBack/PBg3.svg");
+      background-image: url("/public/MBack/PBg3.svg");
     }
   
     .mobile .sContainer .fourth {
-      background-image: url("../public/MBack/PBg4.svg");
+      background-image: url("/public/MBack/PBg4.svg");
     }
   
     .mobile .sContainer .fifth {
-      background-image: url("../public/MBack/PBg5.svg");
+      background-image: url("/public/MBack/PBg5.svg");
     }
   
     .mobile .sContainer .sixth {
-      background-image: url("../public/MBack/PBg6.svg");
+      background-image: url("/public/MBack/PBg6.svg");
     }
   
     .mobile .sContainer .seventh {
-      background-image: url("../public/MBack/PBg7.svg");
+      background-image: url("/public/MBack/PBg7.svg");
     }
   
     .mobile .sContainer .eight {
-      background-image: url("../public/MBack/PBg8.svg");
+      background-image: url("/public/MBack/PBg8.svg");
     }
   
     .mobile .sContainer .ninth {
-      background-image: url("../public/MBack/PBg9.svg");
+      background-image: url("/public/MBack/PBg9.svg");
     }
   
     .mobile .sContainer .tenth {
-      background-image: url("../public/MBack/PBg10.svg");
+      background-image: url("/public/MBack/PBg10.svg");
     }
   
     .mobile .sContainer .eleventh {
-      background-image: url("../public/MBack/PBg11.svg");
+      background-image: url("/public/MBack/PBg11.svg");
     }
   
     .mobile .sContainer .twelfth {
-      background-image: url("../public/MBack/PBg12.svg");
+      background-image: url("/public/MBack/PBg12.svg");
     }
   
     .mobile .sContainer .thirteenth {
-      background-image: url("../public/MBack/PBg13.svg");
+      background-image: url("/public/MBack/PBg13.svg");
       background-size: cover !important
     }
   
     .mobile .sContainer .fourtheenth {
-      background-image: url("../public/MBack/PBg14.svg");
+      background-image: url("/public/MBack/PBg14.svg");
       background-size: cover !important
     }
   
     .mobile .sContainer .fifteenth {
-      background-image: url("../public/MBack/PBg15.svg");
+      background-image: url("/public/MBack/PBg15.svg");
       background-size: cover !important
     }
   
     /*  Mobile view Title   */
     .first .m-story #title {
-      background-image: url("../public/SpObjects/Tit1.svg");
+      background-image: url("/public/SpObjects/Tit1.svg");
     }
   
     .second .m-story #title {
-      background-image: url("../public/SpObjects/Tit2.svg");
+      background-image: url("/public/SpObjects/Tit2.svg");
     }
   
     .third .m-story #title {
-      background-image: url("../public/SpObjects/Tit3.svg");
+      background-image: url("/public/SpObjects/Tit3.svg");
     }
   
     .fourth .m-story #title {
-      background-image: url("../public/SpObjects/Tit4.svg");
+      background-image: url("/public/SpObjects/Tit4.svg");
     }
   
     .fifth .m-story #title {
-      background-image: url("../public/SpObjects/Tit5.svg");
+      background-image: url("/public/SpObjects/Tit5.svg");
     }
   
     .sixth .m-story #title {
-      background-image: url("../public/SpObjects/Tit6.svg");
+      background-image: url("/public/SpObjects/Tit6.svg");
     }
   
     .seventh .m-story #title {
-      background-image: url("../public/SpObjects/Tit7.svg");
+      background-image: url("/public/SpObjects/Tit7.svg");
     }
   
     .eight .m-story #title {
-      background-image: url("../public/SpObjects/Tit8.svg");
+      background-image: url("/public/SpObjects/Tit8.svg");
     }
   
     .ninth .m-story #title {
-      background-image: url("../public/SpObjects/Tit9.svg");
+      background-image: url("/public/SpObjects/Tit9.svg");
     }
   
     .tenth .m-story #title {
-      background-image: url("../public/SpObjects/Tit10.svg");
+      background-image: url("/public/SpObjects/Tit10.svg");
     }
   
     .eleventh .m-story #title {
-      background-image: url("../public/SpObjects/Tit11.svg");
+      background-image: url("/public/SpObjects/Tit11.svg");
     }
   
     .twelfth .m-story #title {
-      background-image: url("../public/SpObjects/Tit12.svg");
+      background-image: url("/public/SpObjects/Tit12.svg");
     }
   
     .thirteenth .m-story #title {
-      background-image: url("../public/SpObjects/Tit13.svg");
+      background-image: url("/public/SpObjects/Tit13.svg");
     }
   
     .fourtheenth .m-story #title {
-      background-image: url("../public/SpObjects/Tit14.svg");
+      background-image: url("/public/SpObjects/Tit14.svg");
     }
   
     .fifteenth .m-story #title {
-      background-image: url("../public/SpObjects/Tit15.svg");
+      background-image: url("/public/SpObjects/Tit15.svg");
     }
   
     .first .m-story #title,
@@ -1787,63 +1787,63 @@
     /*  Mobile view Img   */
   
     .first .m-story #img {
-      background-image: url("../public/SpObjects/Img1.svg");
+      background-image: url("/public/SpObjects/Img1.svg");
     }
   
     .second .m-story #img {
-      background-image: url("../public/SpObjects/Img2.svg");
+      background-image: url("/public/SpObjects/Img2.svg");
     }
   
     .third .m-story #img {
-      background-image: url("../public/SpObjects/Img3.svg");
+      background-image: url("/public/SpObjects/Img3.svg");
     }
   
     .fourth .m-story #img {
-      background-image: url("../public/SpObjects/Img4.svg");
+      background-image: url("/public/SpObjects/Img4.svg");
     }
   
     .fifth .m-story #img {
-      background-image: url("../public/SpObjects/Img5.svg");
+      background-image: url("/public/SpObjects/Img5.svg");
     }
   
     .sixth .m-story #img {
-      background-image: url("../public/SpObjects/Img6.svg");
+      background-image: url("/public/SpObjects/Img6.svg");
     }
   
     .seventh .m-story #img {
-      background-image: url("../public/SpObjects/Img7.svg");
+      background-image: url("/public/SpObjects/Img7.svg");
     }
   
     .eight .m-story #img {
-      background-image: url("../public/SpObjects/Img8.svg");
+      background-image: url("/public/SpObjects/Img8.svg");
     }
   
     .ninth .m-story #img {
-      background-image: url("../public/SpObjects/Img9.svg");
+      background-image: url("/public/SpObjects/Img9.svg");
     }
   
     .tenth .m-story #img {
-      background-image: url("../public/SpObjects/Img10.svg");
+      background-image: url("/public/SpObjects/Img10.svg");
     }
   
     .eleventh .m-story #img {
-      background-image: url("../public/SpObjects/Img11.svg");
+      background-image: url("/public/SpObjects/Img11.svg");
     }
   
     .twelfth .m-story #img {
-      background-image: url("../public/SpObjects/Img12.svg");
+      background-image: url("/public/SpObjects/Img12.svg");
     }
   
     .thirteenth .m-story #img {
-      background-image: url("../public/SpObjects/Img13.svg");
+      background-image: url("/public/SpObjects/Img13.svg");
     }
   
     .fourtheenth .m-story #img {
-      background-image: url("../public/SpObjects/Img14.svg");
+      background-image: url("/public/SpObjects/Img14.svg");
     }
   
     .fifteenth .m-story #img {
-      background-image: url("../public/SpObjects/Img15.svg");
+      background-image: url("/public/SpObjects/Img15.svg");
     }
   
     .first .m-story #img,
@@ -1876,63 +1876,63 @@
     /*  Mobile view Num   */
   
     .first .m-story #num {
-      background-image: url("../public/SpObjects/Num1.svg");
+      background-image: url("/public/SpObjects/Num1.svg");
     }
   
     .second .m-story #num {
-      background-image: url("../public/SpObjects/Num2.svg");
+      background-image: url("/public/SpObjects/Num2.svg");
     }
   
     .third .m-story #num {
-      background-image: url("../public/SpObjects/Num3.svg");
+      background-image: url("/public/SpObjects/Num3.svg");
     }
   
     .fourth .m-story #num {
-      background-image: url("../public/SpObjects/Num4.svg");
+      background-image: url("/public/SpObjects/Num4.svg");
     }
   
     .fifth .m-story #num {
-      background-image: url("../public/SpObjects/Num5.svg");
+      background-image: url("/public/SpObjects/Num5.svg");
     }
   
     .sixth .m-story #num {
-      background-image: url("../public/SpObjects/Num6.svg");
+      background-image: url("/public/SpObjects/Num6.svg");
     }
   
     .seventh .m-story #num {
-      background-image: url("../public/SpObjects/Num7.svg");
+      background-image: url("/public/SpObjects/Num7.svg");
     }
   
     .eight .m-story #num {
-      background-image: url("../public/SpObjects/Num8.svg");
+      background-image: url("/public/SpObjects/Num8.svg");
     }
   
     .ninth .m-story #num {
-      background-image: url("../public/SpObjects/Num9.svg");
+      background-image: url("/public/SpObjects/Num9.svg");
     }
   
     .tenth .m-story #num {
-      background-image: url("../public/SpObjects/Num10.svg");
+      background-image: url("/public/SpObjects/Num10.svg");
     }
   
     .eleventh .m-story #num {
-      background-image: url("../public/SpObjects/Num11.svg");
+      background-image: url("/public/SpObjects/Num11.svg");
     }
   
     .twelfth .m-story #num {
-      background-image: url("../public/SpObjects/Num12.svg");
+      background-image: url("/public/SpObjects/Num12.svg");
     }
   
     .thirteenth .m-story #num {
-      background-image: url("../public/SpObjects/Num13.svg");
+      background-image: url("/public/SpObjects/Num13.svg");
     }
   
     .fourtheenth .m-story #num {
-      background-image: url("../public/SpObjects/Num14.svg");
+      background-image: url("/public/SpObjects/Num14.svg");
     }
   
     .fifteenth .m-story #num {
-      background-image: url("../public/SpObjects/Num15.svg");
+      background-image: url("/public/SpObjects/Num15.svg");
     }
   
     .first .m-story #num,
@@ -1977,75 +1977,75 @@
     }
   
     .first .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt1.svg"); */
-      background: url("../public/SpObjects/Mtxt1.svg");
+      /* background: url("/public/DesktopTxt/Txt1.svg"); */
+      background: url("/public/SpObjects/Mtxt1.svg");
     }
   
     .second .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt2.svg"); */
-      background: url("../public/SpObjects/Mtxt2.svg");
+      /* background: url("/public/DesktopTxt/Txt2.svg"); */
+      background: url("/public/SpObjects/Mtxt2.svg");
     }
   
     .third .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt3.svg"); */
-      background: url("../public/SpObjects/Mtxt3.svg");
+      /* background: url("/public/DesktopTxt/Txt3.svg"); */
+      background: url("/public/SpObjects/Mtxt3.svg");
     }
   
     .fourth .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt4.svg"); */
-      background: url("../public/SpObjects/Mtxt4.svg");
+      /* background: url("/public/DesktopTxt/Txt4.svg"); */
+      background: url("/public/SpObjects/Mtxt4.svg");
     }
   
     .fifth .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt5.svg"); */
-      background: url("../public/SpObjects/Mtxt5.svg");
+      /* background: url("/public/DesktopTxt/Txt5.svg"); */
+      background: url("/public/SpObjects/Mtxt5.svg");
     }
   
     .sixth .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt6.svg"); */
-      background: url("../public/SpObjects/Mtxt6.svg");
+      /* background: url("/public/DesktopTxt/Txt6.svg"); */
+      background: url("/public/SpObjects/Mtxt6.svg");
     }
   
     .seventh .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt7.svg"); */
-      background: url("../public/SpObjects/Mtxt7.svg");
+      /* background: url("/public/DesktopTxt/Txt7.svg"); */
+      background: url("/public/SpObjects/Mtxt7.svg");
     }
   
     .eight .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt8.svg"); */
-      background: url("../public/SpObjects/Mtxt8.svg");
+      /* background: url("/public/DesktopTxt/Txt8.svg"); */
+      background: url("/public/SpObjects/Mtxt8.svg");
     }
   
     .ninth .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt9.svg"); */
-      background: url("../public/SpObjects/Mtxt9.svg");
+      /* background: url("/public/DesktopTxt/Txt9.svg"); */
+      background: url("/public/SpObjects/Mtxt9.svg");
     }
   
     .tenth .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt10.svg"); */
-      background: url("../public/SpObjects/Mtxt10.svg");
+      /* background: url("/public/DesktopTxt/Txt10.svg"); */
+      background: url("/public/SpObjects/Mtxt10.svg");
     }
   
     .eleventh .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt11.svg"); */
-      background: url("../public/SpObjects/Mtxt11.svg");
+      /* background: url("/public/DesktopTxt/Txt11.svg"); */
+      background: url("/public/SpObjects/Mtxt11.svg");
     }
   
     .twelfth .m-story #paraContainer {
-      /* background: url("../public/DesktopTxt/Txt12.svg"); */
-      background: url("../public/SpObjects/Mtxt12.svg");
+      /* background: url("/public/DesktopTxt/Txt12.svg"); */
+      background: url("/public/SpObjects/Mtxt12.svg");
     }
   
     .thirteenth .m-story #paraContainer {
-      background: url("../public/SpObjects/Mtxt13.svg");
+      background: url("/public/SpObjects/Mtxt13.svg");
     }
   
     .fourtheenth .m-story #paraContainer {
-      background: url("../public/SpObjects/Mtxt14.svg");
+      background: url("/public/SpObjects/Mtxt14.svg");
     }
   
     .fifteenth .m-story #paraContainer {
-      background: url("../public/SpObjects/Mtxt15.svg");
+      background: url("/public/SpObjects/Mtxt15.svg");
     }
   
     .welcome #disclaimer {
@@ -2120,7 +2120,7 @@
       }
   
       #logo {
-        background-image: url("../public/logo.png");
+        background-image: url("/public/logo.png");
         background-size: contain;
         width: 45px;
         background-repeat: no-repeat;
@@ -2131,7 +2131,7 @@
         height: 100%;
         position: inherit;
         width: 100%;
-        background: url("../public/ExperiencePage/Fos.png");
+        background: url("/public/ExperiencePage/Fos.png");
         background-size: cover;
         background-position: center;
         justify-content: center;

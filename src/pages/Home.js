@@ -1,11 +1,12 @@
 import React from "react";
-import Experience from "../components/Experience";
-import Content from "../components/Content";
+import Content from "../components/experienceHome/Content";
+import ParamNavbar from "../components/Navbar";
+import "./Home.css"
 
 export default function Home() {
   return (
     <div className="superContainer">
-      <Experience />
+      <ParamNavbar />
       <Content />
     </div>
   );

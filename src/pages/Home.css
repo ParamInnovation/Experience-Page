@@ -89,7 +89,7 @@
   }
 
   #logo {
-    background: url("../public/logo.png");
+    background: url("/public/logo.png");
     background-size: 50px;
     width: 10%;
     background-repeat: no-repeat;
@@ -104,7 +104,7 @@
   .expImg {
     padding: 50px;
     justify-content: space-evenly;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../public/ExperiencePage/exprience.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/public/ExperiencePage/exprience.png);
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
@@ -176,36 +176,36 @@
   }
 
   #indianMinds {
-    background-image: url("../public/ExperiencePage/Indianminds.webp");
+    background-image: url("/public/ExperiencePage/Indianminds.webp");
     background-size: cover;
   }
 
   #virtualZone {
-    background-image: url("../public/ExperiencePage/metaverse.webp");
+    background-image: url("/public/ExperiencePage/metaverse.webp");
     background-size: cover;
     background-position: center;
   }
 
   #gamingZone {
-    background-image: url("../public/ExperiencePage/gaming.webp");
+    background-image: url("/public/ExperiencePage/gaming.webp");
     background-size: cover;
     background-position: center;
   }
 
   #rangolify {
-    background-image: url("../public/ExperiencePage/rangolify.webp");
+    background-image: url("/public/ExperiencePage/rangolify.webp");
     background-size: cover;
     background-position: center;
   }
 
   #curaspace {
-    background-image: url("../public/ExperiencePage/curaspace.webp");
+    background-image: url("/public/ExperiencePage/curaspace.webp");
     background-size: cover;
     background-position: center;
   }
 
   #fos {
-    background-image: url("../public/ExperiencePage/Fos.png");
+    background-image: url("/public/ExperiencePage/Fos.png");
     background-size: cover;
     background-position: center;
   }
@@ -292,7 +292,7 @@
     }
 
     #logo {
-      background-image: url("../public/logo.png");
+      background-image: url("/public/logo.png");
       background-size: contain;
       width: 45px;
       background-repeat: no-repeat;

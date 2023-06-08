@@ -6,7 +6,6 @@ import {
   useLocation,
 } from "react-router-dom";
 import ReactDOM from "react-dom";
-import "./index.css";
 import Home from "./pages/Home";
 import ScienceFields from "./pages/ScienceFields";
 import { ElementGames } from "./pages/ElementGames";

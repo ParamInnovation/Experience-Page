@@ -1,7 +1,7 @@
 import React from 'react'
 import ParamNavbar from '../components/Navbar'
 import Content from '../components/gaminZone/Content'
-import "../gamingZone.css";
+import "./ElementGames.css";
 
 export const ElementGames = () => {
   return (
