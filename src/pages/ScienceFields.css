@@ -1,8 +1,9 @@
+  /*-------------------------- Android and Windows devices --------------------------*/
 @supports not (-webkit-overflow-scrolling: touch) {
-    * {
+    /* * {
       margin: 0;
       height: 100%;
-    }
+    } */
   
     html {
       scroll-behavior: smooth;
@@ -430,7 +431,10 @@
     .ninth,
     .tenth,
     .eleventh,
-    .twelfth {
+    .twelfth,
+    .thirteenth,
+    .fourtheenth,
+    .fifteenth {
       display: flex;
       background-size: cover;
       background-position: center;
@@ -454,6 +458,7 @@
       background-size: auto 20% !important;
       background-position-y: 76% !important;
       z-index: 2;
+      height: 100%;
     }
   
     .story #img {
@@ -461,6 +466,7 @@
       background-attachment: fixed !important;
       background-size: 32% !important;
       background-position: 73.2% 68% !important;
+      height: 100%
     }
   
     .story #num {
@@ -468,6 +474,7 @@
       background-attachment: fixed !important;
       background-size: 10% !important;
       background-position: 50.2% 74% !important;
+      height: 100%
     }
   
     .story #paraContainer {
@@ -476,6 +483,7 @@
       background-size: 35% !important;
       background-position: 11% 33% !important;
       z-index: 1;
+      height: 100%
     }
   
     .story div {
@@ -721,6 +729,7 @@
       z-index: 11;
       color: black;
       background-attachment: fixed;
+      height: 100%;
     }
   
     /*  Mobile view Img   */
@@ -810,6 +819,7 @@
       z-index: 10;
       color: black;
       background-attachment: fixed;
+      height: 100%;
     }
   
     /*  Mobile view Num   */
@@ -900,6 +910,7 @@
       z-index: 10;
       color: black;
       background-attachment: fixed;
+      height: 100%;
     }
   
     /*   Mobile View Paragraph   */
@@ -913,6 +924,7 @@
       background-size: 80% 30% !important;
       background-position-y: 95% !important;
       background-repeat: no-repeat !important;
+      height: 100%;
     }
   
     .first .m-story #paraContainer {
@@ -1067,12 +1079,13 @@
     }
   }
   
+  /*-------------------------- IOS devices --------------------------*/
   @supports (-webkit-overflow-scrolling: touch) {
-    * {
+    /* * {
       margin: 0;
       height: 100%;
     }
-  
+   */
     html {
       scroll-behavior: smooth;
     }

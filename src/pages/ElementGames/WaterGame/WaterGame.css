@@ -1,29 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'DM Sans';
-    /* font-size: 105%; */
-}
-
 canvas {
     height: 90%;
     width: 100%;
 }
 
-#waterGameContainer {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
 .waterGameContainer {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -105,6 +89,7 @@ canvas {
     justify-content: center;
     /* gap: inherit; */
     height: 50%;
+    width: 50%;
 }
 
 #diplayScore {
@@ -195,7 +180,7 @@ canvas {
     align-items: center;
     color: white;
     font-size: 78%;
-    width: inherit;
+    width: 90%;
 }
 
 .description0 {
@@ -223,7 +208,7 @@ canvas {
     display: flex;
     flex-direction: column;
     height: 30%;
-    /* width: 100%; */
+    width: 10%;
     align-items: center;
     text-align: center;
     color: white;
@@ -280,7 +265,7 @@ canvas {
 }
 
 .gameOverContainer {
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 50%;
     height: 80%;
     /* box-shadow: 0 0 5px 2px grey; */
@@ -309,7 +294,7 @@ canvas {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    gap: 10%;
+    /* gap: 10%; */
     /* display: none; */
     /* border: 1px solid black; */
     align-items: center;
@@ -335,11 +320,11 @@ canvas {
     color: brown;
     height: auto;
     position: relative;
-    top: 5%;
+    top: 8%;
 }
 
 .gameOverWater {
-    /* height: auto; */
+    height: inherit;
     width: inherit;
     color: antiquewhite;
     background-image: url(./GameEndPage.png);
@@ -349,7 +334,7 @@ canvas {
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
-    margin-bottom: -30%;
+    /* margin-bottom: -30%; */
 }
 
 #gameOverWater {
@@ -385,27 +370,30 @@ canvas {
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10%;
     padding: 3px;
 }
 
 .coinPlusScore {
     display: flex;
-
+    height: 40px;
 }
 
 .coinImage img {
-    width: 20%;
+    width: 30px;
 }
 
 .retry {
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .retry img {
-    width: 20%;
-    height: 100%
+    width: 80px;
+    height: fit-content;
 }
 
 .titleImage>p {
@@ -520,6 +508,54 @@ canvas {
 
 }
 
+
+@media only screen and (width: 2560px) {
+    
+    .titleGame {
+        margin-top: 28%;
+    }
+
+    .food {
+        width: 20%;
+    }
+}
+
+@media only screen and (width: 1440px) {
+    .titleGame {
+        margin-top: 28%;
+        font-size: xx-large;
+    }
+    #gameOverWater {
+        margin-top: 153px;
+
+    }
+}
+
+@media only screen and (width: 768px) {
+    .titleGame {
+        margin-top: 0px;
+        font-size: xx-large;
+    }
+
+    .titleImage {
+        margin-top: 0px !important;
+        color: wheat;
+
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .gameOverWater {
+        background-size: 120% auto;
+    }
+}
+
+@media only screen and (width: 540px) {
+    #gameOverWater {
+        margin-top: 165px;
+    }
+}
+
 @media only screen and (max-width: 426px) {
     .titleGame {
         height: 40%;
@@ -558,7 +594,7 @@ canvas {
         height: 100%;
         width: 100%;
         background-image: url("./GameEndPage.png");
-        background-size: 120% auto;
+        background-size: contain;
         background-position: bottom;
         background-repeat: no-repeat;
         display: flex;
@@ -589,10 +625,6 @@ canvas {
         font-size: medium;
     }
 
-    .coinImage img {
-        width: 30%;
-    }
-
     .dialogbox {
         background-size: 130%;
     }
@@ -603,25 +635,18 @@ canvas {
 
 }
 
+@media only screen and (max-width: 400px) {
+    #gameOverWater {
+        top: 4%;
+    }
+}
+
 @media only screen and (width: 375px) {
     #gameOverWater {
         margin-top: 25px;
     }
 }
 
-@media only screen and (width: 540px) {
-    #gameOverWater {
-        margin-top: 165px;
-    }
-}
-
-
-@media only screen and (width: 1440px) {
-    #gameOverWater {
-        margin-top: 153px;
-
-    }
-}
 
 @media only screen and (width: 320px) {
     .titleImage {
@@ -631,53 +656,5 @@ canvas {
 }
 
 
-@media only screen and (width: 1440px) {
-    .titleGame {
-        margin-top: 28%;
-        font-size: xx-large;
-    }
-}
 
 
-
-@media only screen and (width: 768px) {
-    .titleGame {
-        margin-top: 0px;
-        font-size: xx-large;
-    }
-
-    .titleImage {
-        margin-top: 0px !important;
-        color: wheat;
-
-    }
-}
-
-@media only screen and (width: 2560px) {
-    
-    .titleGame {
-        margin-top: 28%;
-    }
-
-    .food {
-        width: 20%;
-    }
-}
-
-@media only screen and (max-width: 890px) {
-    .gameOverWater {
-        background-size: 80% auto;
-    }
-}
-
-@media only screen and (max-width: 690px) {
-    .gameOverWater {
-        background-size: 120% auto;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    #gameOverWater {
-        top: 4%;
-    }
-}

@@ -79,7 +79,7 @@
   background-position: center;
 }
 
-.title {
+.titleSpace {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -196,6 +196,7 @@
   font-family: DM-Sans;
   font-weight: bold;
   color: #b5b4b3;
+  bottom: 40%;
 }
 
 .prompt {
@@ -295,7 +296,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .title {
+  .titleSpace {
     background-size: 140%;
   }
 }
@@ -319,7 +320,7 @@
     display: flex;
   }
 
-  .title {
+  .titleSpace {
     background-size: 140% auto;
   }
 }

@@ -930,7 +930,7 @@ export default function SpaceGame() {
         </div>
       </div>
       <div class="loading">
-        <div class="title"></div>
+        <div class="titleSpace"></div>
         <div class="loading-text">
           <span class="loading-text-words">L</span>
           <span class="loading-text-words">O</span>
