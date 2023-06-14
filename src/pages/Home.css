@@ -210,6 +210,10 @@
     background-position: center;
   }
 
+  #equGallery {
+    background-color: #282c34;
+  }
+
   .buttonContainer {
     width: 100% !important;
     height: 20% !important;

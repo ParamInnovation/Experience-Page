@@ -3,16 +3,54 @@
 
 * {
   font-family: 'DM Sans', sans-serif;
+  /* height: 0px; */
 }
 
-body {
+
+.spaceGameContent {
   background-color: black;
   color: aliceblue;
   height: 100vh;
   overflow: hidden;
 }
 
+
+.buttonsSpace {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  top: 30vh;
+}
+.buttonsSpace button a {
+  color: #000;
+  text-decoration: none;
+}
+.buttonsSpace button {
+  border-radius: 20px;
+  padding: 8px;
+  width: 158px;
+  height: max-content;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+}
+
+.buttonsSpace button:nth-child(1):hover {
+  box-shadow: 0 0 4px 4px #02db02;
+  background-image: radial-gradient(white, #e5cfcf, #02db02);
+}
+
+.buttonsSpace button:nth-child(2):hover {
+  box-shadow: 0 0 4px 4px #ff3700;
+  background-image: radial-gradient(white, #e5cfcf, #ff3700);
+}
+
+
+
+
 .game {
+  position: absolute;
   height: 100%;
   filter: blur(20px);
 }
@@ -37,7 +75,7 @@ body {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("/public/GamingZone/spaceGame/loadingBackground.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("./loadingBackground.png");
   background-position: center;
 }
 
@@ -52,7 +90,7 @@ body {
   text-align: center;
   width: 100%;
   height: 100px;
-  background-image: url('/public/GamingZone/spaceGame/title.png');
+  background-image: url('./title.png');
   width: 60%;
   height: auto;
   background-size: cover;
@@ -153,8 +191,7 @@ body {
 }
 
 .gameOver div p {  
-  position: absolute;
-  top: 20%;
+  position: relative;
   font-size: large;
   font-family: DM-Sans;
   font-weight: bold;
@@ -186,6 +223,7 @@ body {
   z-index: 2;
   border: 1px solid;
   display: flex;
+  gap: 1em;
   flex-direction: column;
   position: absolute;
   width: 35%;
@@ -227,31 +265,31 @@ body {
 }
 
 #lostInSpace {
-  background-image: url('/public/GamingZone/spaceGame/lostInSpace.png');
+  background-image: url('./lostInSpace.png');
   /* display: flex; */
   background-size: contain;
 }
 
 #gameOver {
-  background-image: url('/public/GamingZone/spaceGame/hitByAsteroid.png');
+  background-image: url('./hitByAsteroid.png');
   /* display: flex; */
   background-size: contain;
 }
 
 #lowFuel {
-  background-image: url('/public/GamingZone/spaceGame/lowFuel.png');
+  background-image: url('./lowFuel.png');
   /* display: flex; */
   background-size: contain;
 }
 
 #won {
-  background-image: url('/public/GamingZone/spaceGame/won.png');
+  background-image: url('./won.png');
   /* display: flex; */
   background-size: contain;
 }
 
 @media screen and (max-width: 1360px) {
-  .buttons {
+  .buttonsSpace {
     top: 36vh;
   }
 }
@@ -263,13 +301,14 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+    
   .prompt {
     width: 350px;
     height: 350px;
   }
 
-  .buttons {
-    top: 28vh;
+  .buttonsSpace {
+    top: 30vh;
   }
 
   #dInstruction {
@@ -291,11 +330,15 @@ body {
     height: 250px;
   }
 
-  .buttons button {
+  .buttonsSpace button {
     width: 109px;
   }
 
-  .buttons {
-    top: 20vh;
+  .buttonsSpace {
+    top: 22vh;
+  }
+
+  .gameOver div p {
+    font-size: unset;
   }
 }

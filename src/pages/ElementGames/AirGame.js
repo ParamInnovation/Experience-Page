@@ -1,11 +1,8 @@
-import React from "react";
-import GameNav from "../../components/gaminZone/GameNav";
+import React from 'react'
 
 export default function AirGame() {
   return (
-    <div>
-      <GameNav />
-      AirGame
-    </div>
-  );
+    <div>AirGame</div>
+  )
 }
+

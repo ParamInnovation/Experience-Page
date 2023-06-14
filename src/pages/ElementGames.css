@@ -1,5 +1,5 @@
 .gmContainer {
-    height: 100%;
+    height: 100vh;
     width: auto;
     display: flex;
     background-image: linear-gradient(179deg, #00010e, #010415);
@@ -252,6 +252,7 @@
     align-items: center;
     position: relative;
     background: #010415;
+    height: 100vh;
 }
 
 .gameLink{

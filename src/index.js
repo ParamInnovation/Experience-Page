@@ -9,11 +9,12 @@ import ReactDOM from "react-dom";
 import Home from "./pages/Home";
 import ScienceFields from "./pages/ScienceFields";
 import { ElementGames } from "./pages/ElementGames";
-import SpaceGame from "./pages/ElementGames/SpaceGame";
-import FireGame from "./pages/ElementGames/FireGame";
+import SpaceGame from "./pages/ElementGames/SpaceGame/SpaceGame";
+import FireGame from "./pages/ElementGames/FireGame/FireGame";
 import AirGame from "./pages/ElementGames/AirGame";
-import WaterGame from "./pages/ElementGames/WaterGame";
+import WaterGame from "./pages/ElementGames/WaterGame/WaterGame";
 import EarthGame from "./pages/ElementGames/EarthGame";
+import EquationGallery from "./pages/EquationGallery";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/air-game" element={<AirGame />} />
         <Route path="/water-game" element={<WaterGame />} />
         <Route path="/earth-game" element={<EarthGame />} />
+        <Route path="/equational-gallery" element={<EquationGallery />} />
       </Routes>
     </React.Fragment>
   );

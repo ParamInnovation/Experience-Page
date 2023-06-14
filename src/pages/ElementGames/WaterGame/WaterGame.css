@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+    /* font-size: 105%; */
+}
+
+canvas {
+    height: 90%;
+    width: 100%;
+}
+
+#waterGameContainer {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.waterGameContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+#main {
+    width: 70%;
+    height: 85%;
+    /* box-shadow: 0 0 2px 2px grey; */
+    background-image: url("./4162773.jpg");
+    background-size: cover;
+    display: none;
+}
+
+.firstScreen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+.dialogbox1 {
+    padding: 1rem;
+    width: 50%;
+    height: 80%;
+    /* box-shadow: 0 0 5px 2px grey; */
+    background-image: url("./4209206.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    /* gap:10%; */
+    /* display: none; */
+    /* border: 1px solid black; */
+    align-items: center;
+    /* justify-content: center; */
+    align-content: center;
+    /* background-color: #008080; */
+}
+
+.dialogbox {
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 0 0 5px 2px grey; */
+    background-image: url("./GameStartPage.png");
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    /* display: none; */
+    /* border: 1px solid black; */
+    align-items: center;
+    /* justify-content: center; */
+    align-content: center;
+    /* background-color: #008080; */
+}
+
+.titleGame {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-size: 130%;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px grey;
+    margin-top: 22%;
+
+}
+
+.bacteria {
+    display: flex;
+    justify-content: center;
+    /* gap: inherit; */
+    height: 50%;
+}
+
+#diplayScore {
+    width: 30%;
+    text-align: justify;
+    font-size: larger;
+    color: whitesmoke;
+    font-weight: 600;
+    background-color: rgb(49 100 16);
+    ;
+    backdrop-filter: blur(49px);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#description1 {
+    /* width: 30%; */
+    text-align: justify;
+    font-size: larger;
+    color: rgb(105, 15, 18);
+    font-weight: 600;
+    background-color: rgb(31, 218, 215, 0.4);
+    backdrop-filter: blur(49px);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.title {
+
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title1 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.title img {
+    width: 30%;
+    height: 120%;
+}
+
+#aqua {
+    position: absolute;
+    left: 46% !important;
+    color: white;
+    /* background: rgba(36, 0, 153, 0.1); */
+
+    text-shadow: 2px 2px 1px black;
+}
+
+#title {
+    position: absolute;
+}
+
+.best-score {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    width: 100%;
+    height: 10%;
+}
+
+.paramlogo {
+
+    width: 15%;
+    height: 200%;
+}
+
+.paramlogo img {
+    width: 80%;
+    height: 100%;
+}
+
+.description {
+    /* height: 20%; */
+    height: auto;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 78%;
+    width: inherit;
+}
+
+.description0 {
+    height: auto;
+    position: relative;
+    bottom: -10%;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    /* width: 100%; */
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.pointsScore {
+    font-size: 15px;
+    color: rgb(105, 15, 18);
+}
+
+.scoreDescription img {
+    width: 50%;
+    height: 100%;
+}
+
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    margin-bottom: 25%;
+}
+
+#start {
+    width: 15%;
+    height: 100%;
+    /* background-color: #1b8d8e; */
+    background-color: rgb(31, 218, 215, 0.5);
+    color: rgb(105, 15, 18);
+    border: none;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 0.5%;
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px #1b8d8e;
+}
+
+.start1 {
+    display: flex;
+    justify-content: center;
+    height: auto;
+
+
+}
+
+.game-over {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+.gameOverContainer {
+    padding: 1rem;
+    width: 50%;
+    height: 80%;
+    /* box-shadow: 0 0 5px 2px grey; */
+    background-image: url("./4209206.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    /* display: none; */
+    /* border: 1px solid black; */
+    align-items: center;
+    /* justify-content: center; */
+    align-content: center;
+    /* background-color: #008080; */
+    margin-left: 25%;
+    margin-top: 5%;
+}
+
+.gameOverContainer1 {
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 0 0 5px 2px grey; */
+    background-image: url("./4209206.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    /* display: none; */
+    /* border: 1px solid black; */
+    align-items: center;
+    /* justify-content: center; */
+    align-content: center;
+    /* background-color: #008080; */
+}
+
+.gameOverImage {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bestScrore {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(31, 218, 215, 0.4);
+    backdrop-filter: blur(49px);
+    border-radius: 20px;
+    padding: 9px;
+    color: brown;
+    height: auto;
+    position: relative;
+    top: 5%;
+}
+
+.gameOverWater {
+    /* height: auto; */
+    width: inherit;
+    color: antiquewhite;
+    background-image: url(./GameEndPage.png);
+    background-size: contain;
+    background-position: bottom;
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -30%;
+}
+
+#gameOverWater {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    font-size: 150%;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px grey;
+    position: relative;
+
+    @font-face {
+        font-family: BuruhNgepath-WyKqG;
+        src: url('./b-buruh-ngepath-font/BuruhNgepath-WyKqG.otf');
+    }
+
+}
+
+#diplayScore {
+    display: flex;
+    flex-direction: column;
+}
+
+#des {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+
+.coinImage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 3px;
+}
+
+.coinPlusScore {
+    display: flex;
+
+}
+
+.coinImage img {
+    width: 20%;
+}
+
+.retry {
+    width: 100%;
+    height: 100%;
+}
+
+.retry img {
+    width: 20%;
+    height: 100%
+}
+
+.titleImage>p {
+    FONT-FAMILY: 'Permanent Marker';
+}
+
+#yourScore{
+    padding: 50%;
+}
+
+@media only screen and (width: 1024px) {
+    .bacteria {
+        display: flex;
+        justify-content: space-between;
+        height: 50%;
+    }
+
+    .dialogbox1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .titleImage {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: wheat;
+        font-size: 150%;
+        font-weight: 800;
+        text-shadow: 2px 2px 8px grey;
+        FONT-FAMILY: 'Permanent Marker';
+
+    }
+
+    .titleImage>p {
+        FONT-FAMILY: 'Permanent Marker';
+    }
+
+    #gameOverWater {
+
+        margin-top: -10%;
+
+    }
+}
+
+@media only screen and (max-width: 821px) {
+
+    .bacteria {
+        display: flex;
+        height: 50%;
+        width: 100%;
+    }
+
+    #description1 {
+        font-size: small;
+    }
+
+    #start {
+        font-size: small;
+    }
+
+    .dialogbox1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .description0 {
+        margin-bottom: 50% !important;
+    } */
+
+    .gameOverContainer {
+        width: 100%;
+        height: 100%;
+    }
+
+    #main {
+        width: 100%;
+        height: 100%;
+    }
+
+    #start {
+        margin-top: 5px;
+    }
+
+    .titleImage {
+        margin-bottom: -10px;
+        margin-top: 66% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(220, 228, 64);
+        /* font-size: 120%; */
+        font-weight: 800;
+        text-shadow: 2px 2px 8px grey;
+        FONT-FAMILY: 'Permanent Marker';
+    }
+
+    .titleImage>p {
+        FONT-FAMILY: 'Permanent Marker';
+    }
+
+    .gameOverContainer {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    /* #gameOverWater {
+        margin-top: 223px;
+
+    } */
+
+}
+
+@media only screen and (max-width: 426px) {
+    .titleGame {
+        height: 40%;
+        width: 100%;
+        background-image: url("./GameStartPage.png");
+        background-size: 100% 100%;
+
+    }
+
+    .dialogbox {
+        gap: 0%;
+    }
+
+    .titleImage {
+        margin-top: 20%;
+    }
+
+    .titleGame {
+        margin-top: 0px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: wheat;
+        font-size: 80%;
+        font-weight: 800;
+        text-shadow: 2px 2px 8px grey;
+
+    }
+
+    .gameOverContainer1 {
+        background-image: none;
+    }
+
+    .gameOverWater {
+        height: 100%;
+        width: 100%;
+        background-image: url("./GameEndPage.png");
+        background-size: 120% auto;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: wheat;
+        font-size: 80%;
+        font-weight: 800;
+        text-shadow: 2px 2px 8px grey;
+
+    }
+
+    #gameOverWater {
+        margin-top: 40px;
+    }
+
+    .bacteria {
+        align-items: center;
+        height: 30%;
+    }
+
+    .titleImage {
+        margin-top: 10%;
+    }
+
+    #gameOverWater {
+        margin-top: 35px;
+        font-size: medium;
+    }
+
+    .coinImage img {
+        width: 30%;
+    }
+
+    .dialogbox {
+        background-size: 130%;
+    }
+
+    .description0 {
+        bottom: -45%;
+    }
+
+}
+
+@media only screen and (width: 375px) {
+    #gameOverWater {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (width: 540px) {
+    #gameOverWater {
+        margin-top: 165px;
+    }
+}
+
+
+@media only screen and (width: 1440px) {
+    #gameOverWater {
+        margin-top: 153px;
+
+    }
+}
+
+@media only screen and (width: 320px) {
+    .titleImage {
+        width: 110%;
+
+    }
+}
+
+
+@media only screen and (width: 1440px) {
+    .titleGame {
+        margin-top: 28%;
+        font-size: xx-large;
+    }
+}
+
+
+
+@media only screen and (width: 768px) {
+    .titleGame {
+        margin-top: 0px;
+        font-size: xx-large;
+    }
+
+    .titleImage {
+        margin-top: 0px !important;
+        color: wheat;
+
+    }
+}
+
+@media only screen and (width: 2560px) {
+    
+    .titleGame {
+        margin-top: 28%;
+    }
+
+    .food {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .gameOverWater {
+        background-size: 80% auto;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .gameOverWater {
+        background-size: 120% auto;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #gameOverWater {
+        top: 4%;
+    }
+}
