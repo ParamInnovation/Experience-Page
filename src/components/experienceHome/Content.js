@@ -77,14 +77,14 @@ export default function Content() {
               </Link>
             </div>
           </div>
-          <div>
+          {/* <div>
             <div id="equGallery" className="cardDisplay"></div>
             <div className="buttonContainer">
               <Link to="/equational-gallery" className="button">
                 Equational Gallery
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

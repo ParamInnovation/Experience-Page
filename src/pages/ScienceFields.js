@@ -85,7 +85,7 @@ export default function ScienceFields() {
   }, []);
 
   return (
-    <div>
+    <div className="fieldsOfScience">
       <div className="top-nav">
         <ul>
           <li id="logo">

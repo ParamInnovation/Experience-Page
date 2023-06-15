@@ -19,10 +19,12 @@ export default function WaterGame() {
   }
   useEffect(() => {
     // Canvas Setup
-    const canvas = document.getElementById("main");
+    const canvas = document.getElementById("mainWater");
     const firstScreen = document.getElementsByClassName("firstScreen")[0];
     const start = document.getElementById("start");
     const GameOver = document.getElementsByClassName("game-over")[0];
+    const yourScore = document.getElementById("yourScore");
+    const BestScore=document.getElementById('bestScrore')
     const screenWidth = window.innerWidth;
     start.addEventListener("click", function () {
       timeLimit = 60;
@@ -92,19 +94,14 @@ export default function WaterGame() {
     };
     canvas.addEventListener("touchstart", (ev) => {
       touch.isPressed = true;
-      console.log("tap initiated");
-      console.log(ev);
-      console.log(ev.touches[0].clientX, ev.touches[0].clientY);
       updateMousePosition(ev.touches[0].clientX, ev.touches[0].clientY);
     });
 
     canvas.addEventListener("touchend", (ev) => {
-      console.log(ev);
       touch.isPressed = false;
     });
 
     canvas.addEventListener("touchmove", (ev) => {
-      console.log(ev.touches[0].clientX, ev.touches[0].clientY);
       updateMousePosition(ev.touches[0].clientX, ev.touches[0].clientY);
     });
 
@@ -482,7 +479,8 @@ export default function WaterGame() {
         ctx.fillStyle = "black";
         ctx.fillText(`score: ${score}`, 10, 40);
         ctx.fillText(`Time left: ${timeLimit} s`, canvas.width - 170, 40);
-        document.getElementById("yourScore").innerHTML = `${score}`;
+        yourScore.innerHTML = `${score}`;
+        BestScore.innerHTML=`Best Score :${score}`
         gameFrame++;
         if (gameFrame % 60 === 0) {
           timeLimit--;
@@ -491,7 +489,7 @@ export default function WaterGame() {
         if (timeLimit <= 0) {
           const animationId = requestAnimationFrame(animate);
           canvas.style.display = "none";
-          document.getElementsByClassName("game-over")[0].style.display =
+          GameOver.style.display =
             "block";
           cancelAnimationFrame(animationId);
           return;
@@ -557,11 +555,11 @@ export default function WaterGame() {
             </div>
           </div>
         </div>
-        <canvas id="main"></canvas>
+        <canvas id="mainWater"></canvas>
         <div className="game-over">
           <div className="gameOverContainer">
             <div className="gameOverContainer1">
-              <div className="bestScrore">
+              <div className="bestScrore" id="bestScrore">
                 <p>Best Score: 50</p>
               </div>
               <div className="gameOverWater"></div>

@@ -1,0 +1,57 @@
+<html>
+  <head>
+
+    <title>Newton's Bubbles</title>
+    <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+    <script src="https://code.createjs.com/tweenjs-0.6.2.min.js"></script>
+    <script src="https://code.createjs.com/soundjs-0.6.2.min.js"></script>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.1/howler.min.js"></script>
+    <script type="application/javascript" src="lib/bundle.js"></script>
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+  </head>
+
+  <body>
+    <canvas id="game-canvas"></canvas>
+    <img class="pause gone" id="pause" src="https://res.cloudinary.com/dsguwnfdw/image/upload/v1479322057/Bubbles/icon-pause-white.png">
+    <img class="mute gone" id="mute" src="https://res.cloudinary.com/dsguwnfdw/image/upload/v1479495569/white-mute-256_1_a7ytvx.png">
+    <div class="corner-instructions gone" id="corner-instructions">
+      <span>Controls:</span>
+      <span>arrow keys or w-a-s-d to move</span>
+      <span>p to pause</span>
+      <span>m to mute</span>
+      <span>space to restart</span>
+    </div>
+
+    <div class="start-display" id="start-display">
+      <span class="header"><p>Eat smaller bubbles or be eaten!</p> </span>
+      <!-- <span class="subheader2">Eat smaller bubbles or be eaten!</span> -->
+    </div>
+    <div class="difficulty" id="difficulty">
+      <div class="d-header-row">
+        <span class="d-header-left"></span>
+        <span class="d-header"></span>
+        <span class="d-header-right"></span>
+      </div>
+      <div class="d-row">
+        <span class="d-choice" id="caveman"></span>
+        <!-- <span class="d-choice" id="newton"></span> -->
+        <!-- <span class="d-choice selected" id="relativity">General Relativity</span> -->
+        <!-- <span class="d-choice" id="quantum">Quantum Mechanics</span>
+        <span class="d-choice" id="string">String Theory</span> -->
+      </div>
+    </div>
+    <span class="press-space" id="press-space">Press space to start</span>
+
+    <div class="end-display gone" id="end-display">
+      <span class="header2">You've been devoured!</span>
+      <span class="subheader2">Press space to try again</span>
+    </div>
+
+    <div class="win-display gone" id="win-display">
+      <span class="header2">You have succeeded!</span>
+      <span class="subheader2">Press space to play again</span>
+    </div>
+
+  </body>
+
+</html>

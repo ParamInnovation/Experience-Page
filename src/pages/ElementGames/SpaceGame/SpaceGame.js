@@ -118,7 +118,6 @@ export default function SpaceGame() {
     planets.push(planet4);
 
     // Initialize planets
-    console.log(screenWidth);
 
     function initializeElements() {
       if (screenWidth > 450) {
@@ -197,8 +196,8 @@ export default function SpaceGame() {
             image: planetImages[2],
           }, // 110
           {
-            x: canvas.width * 0.015 + 150,
-            y: canvas.width * 0.015 + (canvas.height * 80) / 100,
+            x: canvas.width * 0.015 + 250,
+            y: canvas.width * 0.015 + (canvas.height * 85) / 100,
             radius: canvas.width * 0.02,
             mass: 30,
             image: planetImages[3],

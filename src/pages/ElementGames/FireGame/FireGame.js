@@ -309,13 +309,6 @@ export default function FireGame() {
       laoder.style.display = "none";
     }, 2000);
 
-    function logGameState() {
-      // console.clear();
-      console.log("Player position: (" + player.x + ", " + player.y + ")");
-      console.log("Maze layout:");
-      console.table(mazeLayout);
-    }
-
     // let flame = document.getElementById("flame");
     // Update player position on game screen
     function updatePlayer() {
@@ -504,9 +497,7 @@ export default function FireGame() {
       }
       if (doHaveKey(player.x, player.y)) {
         if (document.querySelector(".cell.player.key")) {
-          console.log("found the cell");
           player.hasKey = true;
-          console.log(mazeLayout[player.x][player.y]);
           mazeLayout[player.x][player.y] = 0;
           warning.style.color = "black";
           warning.style.fontWeight = "";
@@ -556,7 +547,6 @@ export default function FireGame() {
     function handleTouchMove(event) {
       // Prevent default behavior to avoid scrolling while swiping
       event.preventDefault();
-      console.clear();
     }
 
     function handleTouchEnd(event) {

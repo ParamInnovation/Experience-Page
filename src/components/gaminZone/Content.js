@@ -22,7 +22,7 @@ export default function Content() {
       <div className="gmContainer">
         <div className="gmTag">
           <div className="heading">
-            <h1>Elements of Science</h1>
+            <h1>Elemental Games</h1>
           </div>
           <div className="para">
             <p>
@@ -30,7 +30,7 @@ export default function Content() {
               core elements of our vision.
             </p>
           </div>
-          <div className="buttonContainer ExploreBtn">
+          <div className="gaminZoneButtonContainer ExploreBtn">
             <a href="#content" className="button explore">
               <i class="fa-solid fa-arrow-down link"></i>
               Explore Games

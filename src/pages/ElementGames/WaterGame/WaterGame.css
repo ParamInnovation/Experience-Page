@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 
-canvas {
+#mainWater {
     height: 90%;
     width: 100%;
 }
@@ -15,9 +15,9 @@ canvas {
     align-items: center;
 }
 
-#main {
+#mainWater {
     width: 70%;
-    height: 85%;
+    height: 80%;
     /* box-shadow: 0 0 2px 2px grey; */
     background-image: url("./4162773.jpg");
     background-size: cover;
@@ -631,6 +631,10 @@ canvas {
 
     .description0 {
         bottom: -45%;
+    }
+
+    #mainWater {
+        width: 100%;
     }
 
 }
