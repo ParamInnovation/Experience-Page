@@ -12,27 +12,40 @@ export default function FireGame() {
   };
 
   useEffect(() => {
-    let laoder = document.getElementById("loader");
-    let mobIns = document.getElementById("mob-instruction");
-    let deskIns = document.getElementById("desk-instruction");
-    let warning = document.getElementById("warning");
-    let rborder = document.getElementsByClassName("right-border")[0];
-    let crown = document.getElementsByClassName("crown")[0];
-    let gameScreen = document.getElementById("game-screen");
+    const gameEle = document.querySelector('#fireBox')
+    const laoder = document.getElementById("loader");
+    const mobIns = document.getElementById("mob-instruction");
+    const deskIns = document.getElementById("desk-instruction");
+    const warning = document.getElementById("warning");
+    const rborder = document.getElementsByClassName("right-border")[0];
+    const crown = document.getElementsByClassName("crown")[0];
+    const gameScreen = document.getElementById("game-screen");
     const gameContainer = document.getElementById("game-container");
-    let instruction = document.getElementsByClassName("instructionFire")[0];
+    const instruction = document.getElementsByClassName("instructionFire")[0];
     // console.log(instruction)
-    let fuelDisplay = document.getElementById("fuel");
-    // let scoreInfo = document.getElementById('scoreInfo');
-    let scoreDisplay = document.getElementById("score");
-    let win = document.getElementsByClassName("wins")[0];
-    let lowFuel = document.getElementsByClassName("low")[0];
-    let gameOver = document.getElementsByClassName("gif")[0];
-    let deskGotIt = document.getElementById("desk-gotIt");
-    let mobGotIt = document.getElementById("mob-gotIt");
-    let Wscreen = window.innerWidth;
+    const fuelDisplay = document.getElementById("fuel");
+    // const scoreInfo = document.getElementById('scoreInfo');
+    const scoreDisplay = document.getElementById("score");
+    const win = document.getElementsByClassName("wins")[0];
+    const lowFuel = document.getElementsByClassName("low")[0];
+    const gameOver = document.getElementsByClassName("gif")[0];
+    const deskGotIt = document.getElementById("desk-gotIt");
+    const mobGotIt = document.getElementById("mob-gotIt");
+    const Wscreen = window.innerWidth;
     let numFuelSrc;
     let timer;
+
+    function enterFullScreen(element) {
+      if(element.requestFullscreen) {
+        element.requestFullscreen();
+      }else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();     // Firefox
+      }else if (element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen();  // Safari
+      }else if(element.msRequestFullscreen) {
+        element.msRequestFullscreen();      // IE/Edge
+      }
+    };
 
     // Timer for fuel
     function fuelReducer() {
@@ -54,6 +67,7 @@ export default function FireGame() {
     // Hide Instruction function in Mobile mode
 
     mobGotIt.addEventListener("click", () => {
+      enterFullScreen(gameEle);
       instruction.style.display = "none";
       gameContainer.style.filter = "blur()";
       fuelReducer();
@@ -604,7 +618,7 @@ export default function FireGame() {
     startGame();
   });
   return (
-    <div className="fireBox" key={key}>
+    <div id="fireBox" key={key}>
       <GameNav />
       <main id="loader">
         <div className="dank-ass-loader">

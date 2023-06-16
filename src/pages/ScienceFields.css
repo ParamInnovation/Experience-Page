@@ -1135,7 +1135,7 @@
     }
   
     #logo {
-      background-image: url("/public/logo.png");
+      /* background-image: url("/public/logo.png"); */
       background-size: contain;
       width: 65px;
       height: 66px;

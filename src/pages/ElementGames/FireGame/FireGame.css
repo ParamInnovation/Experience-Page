@@ -19,7 +19,7 @@ main {
   z-index: 2;
 }
 
-.fireBox {  
+#fireBox {  
   font-family: 'VT323', monospace;
 }
 
@@ -776,7 +776,7 @@ main {
   }
 
   .promptBox {
-    top: 25%;
+    top: 33%;
     height: 14rem;
     width: 17rem;
   }

@@ -18,16 +18,12 @@ export default function SpaceGame() {
   function reload() {
     window.location.reload();
   }
-  // Got it button function
-  function hideDInstruction() {
-    let dInstruction = document.getElementById("dInstruction");
-    let mInstruction = document.getElementById("mInstruction");
-    let game = document.getElementsByClassName("game")[0];
-    dInstruction.style.display = "none";
-    mInstruction.style.display = "none";
-    game.style.filter = "blur(0px)";
-  }
+
+
   useEffect(() => {
+    const gameEle = document.getElementsByClassName("spaceGameContent")[0];
+    const DgotIt = document.getElementById("DgotIt")
+    const MgotIt = document.getElementById("MgotIt")
     const canvas = document.getElementById("gameCanvas");
     const ctx = canvas.getContext("2d");
 
@@ -891,6 +887,35 @@ export default function SpaceGame() {
 
     setInterval(update, 10);
 
+
+    DgotIt.addEventListener("click", hideDInstruction);
+    MgotIt.addEventListener("click", hideDInstruction);
+
+    function enterFullScreen(element) {
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();     // Firefox
+      } else if (element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen();  // Safari
+      } else if (element.msRequestFullscreen) {
+        element.msRequestFullscreen();      // IE/Edge
+      }
+    };
+    // Got it button function
+    function hideDInstruction() {
+      if(screenWidth <= 780){
+        enterFullScreen(gameEle);
+      }
+      let dInstruction = document.getElementById("dInstruction");
+      let mInstruction = document.getElementById("mInstruction");
+      let game = document.getElementsByClassName("game")[0];
+      dInstruction.style.display = "none";
+      mInstruction.style.display = "none";
+      game.style.filter = "blur(0px)";
+
+    }
+
     // draw();
   });
   return (
@@ -910,7 +935,7 @@ export default function SpaceGame() {
             <span>Hint </span> Use planets gravity and orbital revolution wisely
             and apply thrust at the precise point.
           </p>
-          <button onClick={hideDInstruction}>Got it</button>
+          <button id="DgotIt">Got it</button>
         </div>
         <div id="mInstruction" class="instructionPrompt">
           <p>
@@ -925,7 +950,7 @@ export default function SpaceGame() {
             and apply thrust at the precise point. Tap continuously to move
             faster.
           </p>
-          <button onClick={hideDInstruction}>Got it</button>
+          <button id="MgotIt">Got it</button>
         </div>
       </div>
       <div class="loading">

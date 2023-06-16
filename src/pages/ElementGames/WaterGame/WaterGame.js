@@ -25,8 +25,23 @@ export default function WaterGame() {
     const GameOver = document.getElementsByClassName("game-over")[0];
     const yourScore = document.getElementById("yourScore");
     const BestScore=document.getElementById('bestScrore')
+    const gameEle = document.querySelector('#waterGameContainer');
     const screenWidth = window.innerWidth;
+
+    function enterFullScreen(element) {
+      if(element.requestFullscreen) {
+        element.requestFullscreen();
+      }else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();     // Firefox
+      }else if (element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen();  // Safari
+      }else if(element.msRequestFullscreen) {
+        element.msRequestFullscreen();      // IE/Edge
+      }
+    };
     start.addEventListener("click", function () {
+      enterFullScreen(gameEle);
+    
       timeLimit = 60;
       animate();
       firstScreen.style.display = "none";
@@ -498,7 +513,7 @@ export default function WaterGame() {
 
       requestAnimationFrame(animate);
     };
-  }, []);
+  });
   return (
     <div id="waterGameContainer">
       <GameNav />

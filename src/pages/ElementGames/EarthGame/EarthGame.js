@@ -22,6 +22,19 @@ import * as $ from "jquery";
 export default function EarthGame() {
   useEffect(() => {
     const screeWidth = window.innerWidth;
+    const gameEle = document.querySelector('#earthGameContent');
+
+    function enterFullScreen(element) {
+      if(element.requestFullscreen) {
+        element.requestFullscreen();
+      }else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();     // Firefox
+      }else if (element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen();  // Safari
+      }else if(element.msRequestFullscreen) {
+        element.msRequestFullscreen();      // IE/Edge
+      }
+    };
 
     /*==============================================================================
     Init
@@ -1061,6 +1074,7 @@ States
 
         $.reset();
 
+        // Play Button I.E, Game Start
         var playButton = new $.Button({
           x: $.cw / 2 + 1,
           y: $.ch / 2 - 24,
@@ -1070,7 +1084,7 @@ States
           title: "PLAY",
           action: function () {
             $.reset();
-
+            enterFullScreen(gameEle);
             $.setState("play");
           },
         });
@@ -1172,6 +1186,7 @@ States
           action: function () {
             $.lt = Date.now() + 1000;
             $.setState("play");
+            // console.log("Game Start")
           },
         });
         $.buttons.push(resumeButton);
@@ -1211,7 +1226,7 @@ States
           title: "PLAY AGAIN",
           action: function () {
             $.reset();
-
+            // console.log("Game Start")
             $.setState("play");
           },
         });
@@ -1457,6 +1472,7 @@ States
       };
 
       $.states["play"] = function () {
+        // console.log("Game Start")
         $.updateDelta();
         $.updateScreen();
         $.updateLevel();
@@ -1635,7 +1651,8 @@ States
         }
 
         if ($.keys.pressed.p) {
-          $.setState("play");
+          console.log("Game Start")
+          // $.setState("play");
         }
       };
 
@@ -1763,7 +1780,7 @@ Start Game on Load
     $.init();
   }, []);
   return (
-    <div>
+    <div id="earthGameContent">
       <GameNav />
       <Header />
       <body>
