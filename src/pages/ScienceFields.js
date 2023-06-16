@@ -232,11 +232,7 @@ export default function ScienceFields() {
           </div>
         </div>
         <div className="sContainer">
-          <div
-            id="thirteenth"
-            className="thirteenth background"
-            data-speed="0.5"
-          >
+          <div id="thirteenth" className="thirteenth background" data-speed="0.5">
             <div className="story">
               <div id="title"></div>
               <div id="img"></div>
@@ -246,11 +242,7 @@ export default function ScienceFields() {
           </div>
         </div>
         <div className="sContainer">
-          <div
-            id="fourtheenth"
-            className="fourtheenth background"
-            data-speed="0.5"
-          >
+          <div id="fourtheenth" className="fourtheenth background" data-speed="0.5">
             <div className="story">
               <div id="title"></div>
               <div id="img"></div>

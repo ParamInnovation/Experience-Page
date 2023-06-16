@@ -68,7 +68,6 @@ export default function AirGame() {
     window.addEventListener(
       "keydown",
       (e) => {
-        console.log("here");
         if (gv && e.key === " " && !gv.run) {
           pause.className = "pause";
 
@@ -115,7 +114,6 @@ export default function AirGame() {
         gv.run = true;
         gv.start();
         if (gameEle) {
-          console.log(gameEle)
           enterFullScreen(gameEle);
         }
       } else if (gv && gv.firstGame == false) {
@@ -236,16 +234,13 @@ export default function AirGame() {
             baseColor="#808080"
             stickColor="white"
             move={(IJoystickUpdateEvent) => {
-              console.log(IJoystickUpdateEvent.direction);
               setDirection(IJoystickUpdateEvent.direction);
             }}
             stop={(IJoystickUpdateEvent) => {
-              console.log("stop", IJoystickUpdateEvent);
 
               // setDirection(IJoystickUpdateEvent);
               IJoystickUpdateEvent.x = 0;
               IJoystickUpdateEvent.y = 0;
-              console.log("stop", IJoystickUpdateEvent);
             }}
           ></Joystick>
         </div>

@@ -17,7 +17,7 @@ export default function Content() {
       </div>
       <div className="cardsContainer">
         <div className="cardHolder">
-          <div>
+          <div className="cardSlot">
             <div id="indianMinds" className="cardDisplay"></div>
             <div className="buttonContainer">
               <a
@@ -28,7 +28,7 @@ export default function Content() {
               </a>
             </div>
           </div>
-          <div>
+          <div className="cardSlot">
             <div id="virtualZone" className="cardDisplay"></div>
             <div className="buttonContainer">
               <a
@@ -39,7 +39,7 @@ export default function Content() {
               </a>
             </div>
           </div>
-          <div>
+          <div className="cardSlot">
             <div id="gamingZone" className="cardDisplay"></div>
             <div className="buttonContainer">
               <Link to="/gaming-zone" className="button">
@@ -47,7 +47,7 @@ export default function Content() {
               </Link>
             </div>
           </div>
-          <div>
+          <div className="cardSlot">
             <div id="rangolify" className="cardDisplay"></div>
             <div className="buttonContainer">
               <a
@@ -58,7 +58,7 @@ export default function Content() {
               </a>
             </div>
           </div>
-          <div>
+          <div className="cardSlot">
             <div id="curaspace" className="cardDisplay"></div>
             <div className="buttonContainer">
               <a
@@ -69,7 +69,7 @@ export default function Content() {
               </a>
             </div>
           </div>
-          <div>
+          <div className="cardSlot">
             <div id="fos" className="cardDisplay"></div>
             <div className="buttonContainer">
               <Link to="/fields-of-science" className="button">
@@ -77,7 +77,7 @@ export default function Content() {
               </Link>
             </div>
           </div>
-          {/* <div>
+          {/* <div className="cardSlot">
             <div id="equGallery" className="cardDisplay"></div>
             <div className="buttonContainer">
               <Link to="/equational-gallery" className="button">

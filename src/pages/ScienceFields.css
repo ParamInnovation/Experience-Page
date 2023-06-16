@@ -62,7 +62,7 @@
     }
   
     #logo {
-      background-image: url("/public/logo.png");
+      /* background-image: url("/public/logo.png"); */
       background-size: contain;
       width: 65px;
       height: 66px;
@@ -1135,11 +1135,12 @@
     }
   
     #logo {
-      /* background-image: url("/public/logo.png"); */
+      background-image: url("/public/logo.png");
       background-size: contain;
       width: 65px;
       height: 66px;
       background-repeat: no-repeat;
+      /* display: none; */
     }
   
     .welcome {
@@ -1185,6 +1186,7 @@
   
     .first .story #title {
       background: url('/public/SpObjects/Tit1.svg');
+      /* background-color: #352b5f; */
     }
   
     .first .story #img {
@@ -1504,12 +1506,15 @@
     .ninth,
     .tenth,
     .eleventh,
-    .twelfth {
+    .twelfth,
+    .thirteenth,
+    .fourtheenth,
+    .fifteenth {
       display: flex;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      height: 100vh;
+      height: 100%;
       position: relative;
       overflow: hidden;
       z-index: 2;
@@ -1528,6 +1533,7 @@
       background-size: auto 20% !important;
       background-position-y: 76% !important;
       z-index: 2;
+      height: 100%;
     }
   
     .story #img {
@@ -1535,6 +1541,7 @@
       background-attachment: scroll !important;
       background-size: 32% !important;
       background-position: 73.2% 68% !important;
+      height: 100%;
     }
   
     .story #num {
@@ -1542,6 +1549,7 @@
       background-attachment: scroll !important;
       background-size: 10% !important;
       background-position: 50.2% 74% !important;
+      height: 100%;
     }
   
     .story #paraContainer {
@@ -1550,6 +1558,7 @@
       background-size: 35% !important;
       background-position: 11% 33% !important;
       z-index: 1;
+      height: 100%;
     }
   
     .story div {
@@ -1696,17 +1705,17 @@
   
     .mobile .sContainer .thirteenth {
       background-image: url("/public/MBack/PBg13.svg");
-      background-size: cover !important
+      /* background-size: cover !important */
     }
   
     .mobile .sContainer .fourtheenth {
       background-image: url("/public/MBack/PBg14.svg");
-      background-size: cover !important
+      /* background-size: cover !important */
     }
   
     .mobile .sContainer .fifteenth {
       background-image: url("/public/MBack/PBg15.svg");
-      background-size: cover !important
+      /* background-size: cover !important */
     }
   
     /*  Mobile view Title   */
@@ -1790,6 +1799,7 @@
       background-position-y: 11%;
       background-repeat: no-repeat;
       padding: 0;
+      height: 100%;
       position: absolute;
       width: inherit;
       z-index: 11;
@@ -1880,6 +1890,7 @@
       background-repeat: no-repeat;
       padding: 0;
       position: absolute;
+      height: 100%;
       width: inherit;
       z-index: 10;
       color: black;
@@ -1969,6 +1980,7 @@
       background-position-y: 60%;
       background-repeat: no-repeat;
       padding: 0;
+      height: 100%;
       position: absolute;
       width: inherit;
       z-index: 10;
@@ -1987,6 +1999,7 @@
       background-size: 80% 30% !important;
       background-position-y: 95% !important;
       background-repeat: no-repeat !important;
+      height: 100% !important;
     }
   
     .first .m-story #paraContainer {
@@ -2065,7 +2078,7 @@
       display: flex;
       color: white;
       position: absolute;
-      top: 85%;
+      bottom: 10%;
       width: 90%;
     }
   
