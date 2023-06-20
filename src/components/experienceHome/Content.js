@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Card, CardContent, Button } from "@material-ui/core";
 
 export default function Content() {
   return (
@@ -77,14 +76,14 @@ export default function Content() {
               </Link>
             </div>
           </div>
-          {/* <div className="cardSlot">
+          <div className="cardSlot">
             <div id="equGallery" className="cardDisplay"></div>
             <div className="buttonContainer">
               <Link to="/equational-gallery" className="button">
                 Equational Gallery
               </Link>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>

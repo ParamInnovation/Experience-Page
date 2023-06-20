@@ -121,24 +121,24 @@
     background-size: cover;
 }
 
-.options .option :nth-child(1) {
-    --defaultBackground: #ed5565;
+#prithvi .icon i {
+    color: #476a63;
 }
 
-.options .option :nth-child(2) {
-    --defaultBackground: #fc6e51;
+#jala .icon i {
+    color:#297799;
 }
 
-.options .option :nth-child(3) {
-    --defaultBackground: #5d9cec;
+#vayu .icon i {
+    color: #f3ba7f;
 }
 
-.options .option :nth-child(4) {
-    --defaultBackground: #2ecc71;
+#tejas .icon i {
+    color: #c43712;
 }
 
-.options .option :nth-child(5) {
-    --defaultBackground: #ffce54;
+#akash .icon i {
+    color: #1e223d;
 }
 
 /* 

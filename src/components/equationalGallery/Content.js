@@ -1,64 +1,79 @@
-import React, { useEffect, useState } from "react";
-import $ from "jquery";
-import ScrollSection from "./ScrollSection";
+import React, { useState, useEffect, useRef } from "react";
+import { animated } from "@react-spring/web";
+import { useTransition } from "@react-spring/core";
+import Fullpage, {
+  FullPageSections,
+  FullpageSection,
+} from "@ap.cx/react-fullpage";
+import "../../pages/EquationGallery/EquationGallery.css";
+import image1 from "./public/Desmos.PNG";
+import image2 from "./public/Harmonograph.png";
+import image3 from "./public/Lorenz_Attractor.PNG";
+import image4 from "./public/Weight_on_Planets.PNG";
+
+import Section from "./Section";
 
 export default function Content() {
-  const [currentSection, setCurrentSection] = useState(0);
-  const [isScrolling, setIsScrolling] = useState(false);
-  const [opacities, setOpacities] = useState([1, 0, 0]);
+  const [bgImage, setBgImage] = useState("");
+  const [text, setText] = useState("");
 
-  const handleScroll = (event) => {
-    if (isScrolling) return;
-    setIsScrolling(true);
-    setTimeout(() => setIsScrolling(false), 1000); // Adjust this based on your scroll speed
-    if (event.deltaY > 0) {
-      setCurrentSection((prevSection) => Math.min(prevSection + 1, 2));
-    } else {
-      setCurrentSection((prevSection) => Math.max(prevSection - 1, 0));
-    }
-  };
+  const sections = [
+    { image: image1, text: "Desmos", position: "left", link: "/Run" },
+    { image: image2, text: "Harmonograph", position: "right", link: "/about" },
+    { image: image3, text: "Attractors", position: "right", link: "/services" },
+    {
+      image: image4,
+      text: "Weights On Other Planets",
+      position: "left",
+      link: "/contact",
+    },
+  ];
+  const sectionRefs = sections.map(() => React.createRef());
+  const transitions = useTransition(text, {
+    from: { opacity: 0, transform: "translate3d(0, -1005%, 0)" },
+    enter: { opacity: 1, transform: "translate3d(0, 0, 0)" },
+    leave: { opacity: 0, transform: "translate3d(0, -500%, 0)" },
+    config: { duration: -300 },
+  });
 
-  useEffect(() => {
-    window.addEventListener("wheel", handleScroll, { passive: false });
-    return () => window.removeEventListener("wheel", handleScroll);
-  }, [isScrolling]);
-
-  useEffect(() => {
-    window.scrollTo({
-      top: currentSection * window.innerHeight,
-      behavior: "smooth",
-    });
-  }, [currentSection]);
-
-  useEffect(() => {
-    const newOpacities = opacities.map((_, i) => {
-      if (i < currentSection) return 0;
-      if (i === currentSection) return 1;
-      return 0;
-    });
-    setOpacities(newOpacities);
-  }, [currentSection]);
+  const sectionStyle = {
+    height: '100vh',
+  }
 
   return (
-    <div className="equGalleryContent">
-      <ScrollSection
-        name="section1"
-        image="https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg" opacity={opacities[0]}>
-        <h1>Section 1</h1>
-        <p>Content for section 1...</p>
-      </ScrollSection>
-      <ScrollSection
-        name="section2"
-        image="https://img.freepik.com/free-photo/india-flag-wrinkled-dark-background-3d-render_1379-583.jpg?size=626&ext=jpg&ga=GA1.2.942034155.1685687559&semt=sph" opacity={opacities[0]}>
-        <h1>Section 2</h1>
-        <p>Content for section 2...</p>
-      </ScrollSection>
-      <ScrollSection
-        name="section3"
-        image="https://img.freepik.com/free-photo/leafy-tree-branch-vibrant-autumn-colors-generated-by-ai_188544-10399.jpg?w=1380&t=st=1686656373~exp=1686656973~hmac=455ae80cbb772f27e032296c5aec8e5fe81c6bb043f9b72764d0649271e2cc2b" opacity={opacities[0]}>
-        <h1>Section 3</h1>
-        <p>Content for section 3...</p>
-      </ScrollSection>
-    </div>
+    <>
+      {transitions((style, item) => (
+        <animated.div
+          className="fixed"
+          style={{
+            height: "100vh",
+            width: "100%",
+            position: "fixed",
+            backgroundImage: `url(${bgImage})`,
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            ...style,
+          }}
+        />
+      ))}
+      <Fullpage>
+        <FullPageSections>
+          {sections.map((section, index) => (
+            <FullpageSection key={index} style={sectionStyle}>
+              <Section
+                setImage={setBgImage}
+                image={section.image}
+                index={index}
+                text={section.text}
+                setText={setText}
+                link={section.link}
+                id={`section${index}`}
+                ref={sectionRefs[index]}
+              />
+            </FullpageSection>
+          ))}
+        </FullPageSections>
+      </Fullpage>
+    </>
   );
 }
