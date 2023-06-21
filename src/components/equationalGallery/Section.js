@@ -1,6 +1,7 @@
 import React, { useState, useEffect, forwardRef } from 'react';
+import { Link } from 'react-router-dom';
 
-const Section = forwardRef(({ setImage, image, index, text, setText, link, id }, ref) => {
+const Section = forwardRef(({ className, setImage, image, index, text, setText, link, id }, ref) => {
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
@@ -21,9 +22,9 @@ const Section = forwardRef(({ setImage, image, index, text, setText, link, id },
   }, [ref, setImage, setText, image, text]);
   
   return (
-    <div id={id} ref={ref} style={{ height: '100vh', width: '100%', position: 'relative' }}>
-      <h2 style={{ position: 'absolute', top: '50%', color: 'white', textShadow: '2px 2px 4px #000000' }}>
-        <a href={link}>{text}</a>
+    <div className={className} id={id} ref={ref} style={{ height: '100vh', width: '100%', position: 'relative' }}>
+      <h2>
+        <Link to={link}>{text}</Link>
       </h2>
     </div>
   );

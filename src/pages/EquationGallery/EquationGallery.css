@@ -20,12 +20,108 @@ body::-webkit-scrollbar {
     background-color: black;
   }
   
-  
-  .section {
-    scroll-snap-align: start;
+  .fullPageSection{
+    position: relative;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    /* scroll-snap-align: center; */
     height: 100vh;
     width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
   }
+  
+  .fullPageSections {
+    scroll-snap-align: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-left: 5%;
+  }
+
   a{
     color:white;
   }
+
+  .fullPageSections h2 {
+    position: 'absolute';
+    top: '50%';
+    color: 'white';
+    /* textShadow: '2px 2px 4px #000000'; */
+  }
+
+  #desmosContainer {
+    background-color: #cccccc;
+  }
+
+  #desmosContainer .calculatorContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  #desmosContainer .contents, .example {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #desmosContainer .calculatorContainer .loader {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+  }
+  #desmosContainer .calculatorContainer .loader div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #ffffff transparent transparent transparent;
+  }
+
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  
+  @media screen and (max-width: 450px) {
+    #desmosContainer #calculator {
+        width: 90% !important;
+    }
+
+    #desmosContainer .contents h2{
+        text-align: center;
+    }
+
+    #desmosContainer .contents iframe{
+        width: auto;
+        height: auto;
+    }
+  }
+
+
+

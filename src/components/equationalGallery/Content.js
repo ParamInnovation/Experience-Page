@@ -18,14 +18,24 @@ export default function Content() {
   const [text, setText] = useState("");
 
   const sections = [
-    { image: image1, text: "Desmos", position: "left", link: "/Run" },
-    { image: image2, text: "Harmonograph", position: "right", link: "/about" },
-    { image: image3, text: "Attractors", position: "right", link: "/services" },
+    { image: image1, text: "Desmos", position: "left", link: "/desmos" },
+    {
+      image: image2,
+      text: "Harmonograph",
+      position: "right",
+      link: "/harmonograph",
+    },
+    {
+      image: image3,
+      text: "Attractors",
+      position: "right",
+      link: "/attractors",
+    },
     {
       image: image4,
       text: "Weights On Other Planets",
       position: "left",
-      link: "/contact",
+      link: "/weights-on-planets",
     },
   ];
   const sectionRefs = sections.map(() => React.createRef());
@@ -37,8 +47,8 @@ export default function Content() {
   });
 
   const sectionStyle = {
-    height: '100vh',
-  }
+    height: "100vh",
+  };
 
   return (
     <>
@@ -56,24 +66,28 @@ export default function Content() {
           }}
         />
       ))}
-      <Fullpage>
-        <FullPageSections>
-          {sections.map((section, index) => (
-            <FullpageSection key={index} style={sectionStyle}>
-              <Section
-                setImage={setBgImage}
-                image={section.image}
-                index={index}
-                text={section.text}
-                setText={setText}
-                link={section.link}
-                id={`section${index}`}
-                ref={sectionRefs[index]}
-              />
-            </FullpageSection>
-          ))}
-        </FullPageSections>
-      </Fullpage>
+      {/* <Fullpage> */}
+      {/* <FullPageSections> */}
+      <div className="fullPageSection">
+        {sections.map((section, index) => (
+          // <FullpageSection key={index} style={sectionStyle}>
+          <Section
+            key={index}
+            className="fullPageSections"
+            setImage={setBgImage}
+            image={section.image}
+            index={index}
+            text={section.text}
+            setText={setText}
+            link={section.link}
+            id={`section${index}`}
+            ref={sectionRefs[index]}
+          />
+          // </FullpageSection>
+        ))}
+      </div>
+      {/* </FullPageSections> */}
+      {/* </Fullpage> */}
     </>
   );
 }
