@@ -116,8 +116,8 @@
     font-family: "DM Sans", Sans-serif;
     flex-direction: column;
     display: flex;
-    width: 100%;
-    gap: 2rem;
+    width: 50%;
+    /* gap: 2rem; */
     margin-top: 15%;
   }
 

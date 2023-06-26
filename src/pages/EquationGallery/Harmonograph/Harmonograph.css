@@ -1,0 +1,893 @@
+
+.harmonographConatiner{
+    margin: 0;
+    padding: 0;
+  
+    position: relative;
+    background-color: #000000;
+    color: #F0F2BC;
+    font-size: 80%;
+    text-align: center;
+    font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    overflow: hidden;
+}
+.harmonographConatiner .infoButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 6;
+  }
+  
+  .harmonographConatiner .infoButton i {
+    font-size: 24px;
+    color: #3ABECB;
+  }
+/* 
+  .harmonographConatiner .dialog-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .harmonographConatiner .dialog-box {
+    background-color:black;
+    width: 400px;
+    max-width: 90%;
+    height: 50%;
+    padding: 20px;
+    overflow-y:auto;
+    
+  }
+  
+  
+  .harmonographConatiner .dialog-box h2 {
+    margin-top: 0;
+  }
+  
+  .harmonographConatiner .dialog-box button {
+    margin-top: 10px;
+  } */
+
+  .harmonographConatiner .dialog-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+ 
+  
+  .harmonographConatiner .dialog-box {
+    backdrop-filter: blur(20px);
+    width: 400px;
+    max-width: 90%;
+    height: 50%;
+    padding: 20px;
+    overflow-y: auto;
+    border: 1px solid white;
+     /* font-size: medium; */
+    border-radius: 20px;
+  }
+  
+  
+  .harmonographConatiner .dialog-box::-webkit-scrollbar {
+    width: 5px;
+   
+  }
+  
+  .harmonographConatiner .dialog-box::-webkit-scrollbar-track {
+    background-color: #333;
+    margin: 17px;
+    border-radius: 20px;
+  }
+  
+  .harmonographConatiner .dialog-box::-webkit-scrollbar-thumb {
+    background-color: #c29c31;
+    border-radius: 5px;
+
+  }
+  
+  .harmonographConatiner .dialog-box h2 {
+    margin-top: 0;
+  }
+  
+  .harmonographConatiner .dialog-box button {
+    margin-top: 10px;
+  }
+  .harmonographConatiner #harmonoCloseDialogbox{
+    width: 8em;
+    height: 36px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* width: 6em; */
+    border: 1px solid gray !important;
+    /* --hover-shadows: 6px 16px 33px #121212,
+                      -6px -16px 33px #303030; */
+    --accent: #0e0e0e;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 1.1em;
+    background: linear-gradient(90deg, rgb(14, 13, 13) 0%, rgb(14, 14, 13) 100%);
+
+    color: white;
+    /* padding: 1em 2em; */
+    transition: box-shadow ease-in-out 0.3s,
+        background-color ease-in-out 0.1s,
+        letter-spacing ease-in-out 0.1s,
+        transform ease-in-out 0.1s;
+  }
+  
+
+.harmonographConatiner #harmonochangeColor{
+    position: absolute;
+    top: 2%;
+    z-index: 3;
+    font-size: X-LARGE;
+    COLOR: WHITE;
+    FONT-WEIGHT: normal;
+}
+
+.harmonographConatiner a {
+    color: #B99635;
+    text-decoration: none;
+}
+
+.harmonographConatiner a:visited {
+    color: #B99635;
+}
+
+.harmonographConatiner a:hover {
+    color: #DA6314;
+}
+
+.harmonographConatiner p {
+    margin: 0 0 .8em 0
+}
+
+.harmonographConatiner h3 {
+    font-size: 1.2em;
+    margin: 1.8em 0 .8em 0;
+}
+
+.harmonographConatiner h2 {
+    font-size: 1.8em;
+    margin: 1.8em 0 .8em 0;
+}
+
+.harmonographConatiner table {
+    background-color: transparent;
+    position: absolute;
+    backdrop-filter: blur(8px);
+    z-index: 3;
+}
+
+.harmonographConatiner tr.head {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.harmonographConatiner td.label {
+    text-align: right;
+    padding-right: 1em;
+}
+
+.harmonographConatiner input {
+    width: 5em;
+    text-align: center;
+    background: none;
+    color: #F0F2BC;
+    border-color: #F0F2BC;
+    border-width: 1px;
+}
+
+.harmonographConatiner input.error {
+    background-color: #671008;
+}
+
+.harmonographConatiner .harmonobutton-17 {
+    width: 5em;
+    text-align: center;
+    background: rgba(88, 44, 22, 0.8);
+    color: #F0F2BC;
+    border-color: #F0F2BC;
+    border-width: 1px;
+}
+
+.harmonographConatiner .copy {
+    font-size: .8em;
+    color: #5D432F;
+}
+
+.harmonographConatiner #frame {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    /*height: 100%;*/
+    margin: auto;
+}
+
+.harmonographConatiner #harmonograph {
+    position: relative;
+    top: 10%;
+    height: 600px;
+}
+
+.harmonographConatiner #image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 780px;
+}
+
+.harmonographConatiner #harmonobuttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 480px;
+    text-align: left;
+    display: none;
+}
+
+.harmonographConatiner #harmonosettings {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    width: 380px;
+    text-align: left;
+    display: none;
+}
+
+.harmonographConatiner #harmonotopview {
+    position: absolute;
+    top: 8%;
+    right: 0%;
+    width: 300px;
+}
+
+.harmonographConatiner #harmonotext {
+    position: absolute;
+    top: 720px;
+    left: 400px;
+    width: 460px;
+    text-align: left;
+}
+
+.harmonographConatiner #harmonofooter {
+    position: absolute;
+    top: 940px;
+    left: 100px;
+    width: 780px;
+    text-align: center;
+    padding: 28px 0px 58px 0px;
+}
+
+.harmonographConatiner .harmonosliders {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -65px;
+    left: 2%;
+    gap: 20px;
+    width: 100px;
+    height: 100%;
+}
+
+.harmonographConatiner .harmonolable1 {
+    position: relative;
+    top: 130px;
+    left: 28px;
+    z-index: 4;
+}
+
+.harmonographConatiner #harmonocontainer {
+    display: none;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    left: 10px;
+}
+
+.harmonographConatiner #harmonoitem {
+    z-index: 6;
+    width: 42.2px;
+    height: 42.2px;
+    background-color: white;
+    border: 10px solid hsla(0, 6%, 76%, 0.8);
+    box-shadow: inset 0px 0px 40px 40px white;
+    border-radius: 50%;
+    touch-action: none;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.harmonographConatiner #harmonoitem:active {
+    background-color: rgba(168, 218, 220, 1.00);
+    cursor: pointer;
+
+}
+
+.harmonographConatiner #harmonoitem:hover {
+    cursor: pointer;
+}
+
+.harmonographConatiner #harmonox {
+    display: none;
+    color: #444444;
+    font-size: x-large;
+}
+
+.harmonographConatiner .harmonovalueContainer {
+
+    position: absolute;
+    display: block;
+    bottom: 20%;
+    width: 309px;
+    height: 213px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    z-index: 5;
+    display: none;
+
+}
+
+
+
+.harmonographConatiner .harmonosliderBlock1 {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 25px;
+    gap: 1rem;
+
+}
+
+.harmonographConatiner .harmonosblock1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 121px;
+    height: 100%;
+    color: #000000;
+}
+
+.harmonographConatiner .harmonoconstantValues {
+    top: 572px;
+    left: 236px;
+    width: 102px;
+    height: 50px;
+    /* UI Properties */
+    background: white 0% 0% no-repeat padding-box;
+    border-radius: 50px 0px 0px 50px;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.harmonographConatiner .harmonoconstantValues::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    background-color: #e6e6e6;
+    z-index: -1;
+    transition: width 1.0s ease-in-out;
+}
+
+.harmonographConatiner .harmonoconstantValues.clicked::before {
+    width: 100%;
+}
+
+
+.harmonographConatiner .harmonoconstantcircle {
+    top: 580px;
+    left: 245px;
+    width: 35px;
+    height: 35px;
+    /* UI Properties */
+    background: #3ABECB 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem;
+    margin-left: 0.5rem;
+}
+
+.harmonographConatiner .harmonoconstantcircle1 {
+    top: 580px;
+    left: 245px;
+    width: 30px;
+    height: 30px;
+    /* UI Properties */
+    background: white 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+@keyframes fill {
+    0% {
+        background-size: 0% 100%;
+        background-color: transparent;
+    }
+
+    100% {
+        background-size: 100% 100%;
+        /* end with 100% width and 100% height */
+        background-color: #d3f5f8;
+        background-position: 100% 0%;
+        transition: background-color 0.2s ease-in-out;
+
+    }
+}
+
+.harmonographConatiner .harmonoconstantValues.clicked {
+    animation-name: fill;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+.harmonographConatiner #harmonouniqueslider.rs-container,
+.harmonographConatiner #harmonouniqueslider1.rs-container,
+.harmonographConatiner #harmonouniqueslider2.rs-container {
+    border-color: none;
+    cursor: pointer;
+
+}
+
+.harmonographConatiner #harmonouniqueslider.rs-range-color {
+    background: linear-gradient(90deg, #3ABECB 0%, #21638a 100%);
+}
+
+.harmonographConatiner #harmonouniqueslider .rs-path-color,
+.harmonographConatiner #harmonouniqueslider1 .rs-path-color,
+.harmonographConatiner #harmonouniqueslider2 .rs-path-color,
+.harmonographConatiner #harmonouniqueslider3 .rs-path-color {
+    background-color: #21638a;
+}
+
+.harmonographConatiner #harmonouniqueslider .rs-handle {
+    background: radial-gradient(ellipse at center, #D1D1D1, 0%, #D1D1D1 34%, #D1D1D1 100%);
+    cursor: pointer;
+}
+
+.harmonographConatiner #harmonouniqueslider .rs-tooltip-text,
+.harmonographConatiner #harmonouniqueslider1 .rs-tooltip-text,
+.harmonographConatiner #harmonouniqueslider2 .rs-tooltip-text,
+.harmonographConatiner #harmonouniqueslider3 .rs-tooltip-text {
+    color: #9DE5EC;
+    font-size: large;
+}
+
+/* .harmonographConatiner #harmonouniqueslider1 .rs-tooltip-text,
+.harmonographConatiner #harmonouniqueslider2 .rs-tooltip-text,
+.harmonographConatiner #harmonouniqueslider3 .rs-tooltip-text {
+    margin-top: -12px !important;
+    margin-left: -41px !important; 
+} */
+
+.harmonographConatiner #harmonouniqueslider .rs-bg-color,
+.harmonographConatiner #harmonouniqueslider1 .rs-bg-color,
+.harmonographConatiner #harmonouniqueslider2 .rs-bg-color,
+.harmonographConatiner #harmonouniqueslider3 .rs-bg-color {
+    background-color: white;
+}
+
+
+.harmonographConatiner #harmonouniqueslider1.rs-range-color,
+.harmonographConatiner #harmonouniqueslider2.rs-range-color,
+.harmonographConatiner #harmonouniqueslider3.rs-range-color {
+    background: linear-gradient(90deg, #9DE5EC 0%, #9DE5EC 100%);
+}
+
+
+.harmonographConatiner #harmonouniqueslider1 .rs-handle,
+.harmonographConatiner #harmonouniqueslider2 .rs-handle,
+.harmonographConatiner #harmonouniqueslider3 .rs-handle,
+.harmonographConatiner #harmonouniqueslider3.rs-container {
+    background: radial-gradient(ellipse at center, #D1D1D1, 0%, #D1D1D1 34%, #D1D1D1 100%);
+    cursor: pointer;
+}
+
+.harmonographConatiner #harmonouniqueslider2,
+.harmonographConatiner #harmonouniqueslider3 {
+    display: none;
+}
+
+.harmonographConatiner .rs-bar .rs-seperator {
+    height: 0;
+    display: none !important;
+    float: left;
+}
+
+.harmonographConatiner .rs-tooltip.edit,
+.harmonographConatiner .rs-tooltip .rs-input {
+    padding: 0;
+}
+
+.harmonographConatiner .full .rs-tooltip {
+    top: none;
+    left: none;
+}
+
+.harmonographConatiner .rs-control {
+    top: 7%;
+}
+
+.harmonographConatiner .harmonobuttons {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    /* bottom: 8%; */
+    bottom: 7%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.harmonographConatiner #harmonodownload {
+    background-image: url('./images/download1.png');
+    background-color: #0e0e0d;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.harmonographConatiner .harmonobutton-17 {
+    width: 8em;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 6em; */
+    border: 1px solid gray !important;
+    /* --hover-shadows: 6px 16px 33px #121212,
+                      -6px -16px 33px #303030; */
+    --accent: #0e0e0e;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    border: none;
+    border-radius: 1.1em;
+    background: linear-gradient(90deg, rgb(14, 13, 13) 0%, rgb(14, 14, 13) 100%);
+
+    color: white;
+    padding: 1em 2em;
+    transition: box-shadow ease-in-out 0.3s,
+        background-color ease-in-out 0.1s,
+        letter-spacing ease-in-out 0.1s,
+        transform ease-in-out 0.1s;
+    /* box-shadow: 13px 13px 10px #1c1c1c,
+                -13px -13px 10px #262626; */
+}
+
+.harmonographConatiner .harmonobutton-17:hover {
+    box-shadow: var(--hover-shadows);
+}
+
+.harmonographConatiner .harmonobutton-17:active {
+    box-shadow: var(--hover-shadows),
+        var(--accent) 0px 0px 30px 5px;
+    background-color: var(--accent);
+    transform: scale(0.95);
+}
+
+.harmonographConatiner .harmonobutton-17 p {
+    margin: 0;
+}
+
+.harmonographConatiner .harmonopresetContainer .button-17 {
+    height: 36px;
+}
+
+.harmonographConatiner #harmonopresets {
+    /* background-color: #0ff; */
+    display: none;
+    flex-direction: column;
+    padding: 2px;
+    /* height: 20vh; */
+    justify-content: center;
+    position: absolute;
+    gap: 5px;
+    align-items: center;
+    border-radius: 20px;
+    z-index: 5;
+    backdrop-filter: blur(6px);
+    bottom: -200px;
+    /* transition: bottom 1s ease-in-out; */
+}
+
+@keyframes slide-up {
+    0% {
+        bottom: -400px;
+    }
+
+    50% {
+        bottom: 44px;
+    }
+
+    100% {
+        bottom: 43px;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        bottom: 43px;
+    }
+
+    100% {
+        bottom: -400px;
+    }
+}
+
+/*-------------------------------------*/
+
+@keyframes slide-up320 {
+    0% {
+        bottom: -400px;
+    }
+
+    50% {
+        bottom: 97px;
+    }
+
+    100% {
+        bottom: 96px;
+    }
+}
+
+@keyframes slide-down320 {
+    0% {
+        bottom: 96px;
+    }
+
+    100% {
+        bottom: -400px;
+    }
+}
+/*-------------------------------------*/
+
+.harmonographConatiner #harmonopresets.show {
+    bottom: 0;
+}
+
+.harmonographConatiner #harmonopreset {
+    display: flex;
+    background-color: red;
+    align-items: center;
+    justify-content: center;
+}
+
+.harmonographConatiner #harmonopreset p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.harmonographConatiner .harmonopicker {
+    z-index: 3;
+    position: absolute;
+    left: -50px;
+    bottom: -139px;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    text-align: center;
+
+}
+
+.harmonographConatiner .harmonocolorPicker {
+    /* position: absolute;
+    top: 40%;
+    left: 80%;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    text-align: center;
+    background-color: yellow; */
+    width: 404px;
+}
+
+.harmonographConatiner #harmonocolorPicker {
+    width: 60%;
+    height: 10px;
+    background: linear-gradient(to right, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);
+    outline: none;
+    border-radius: 2rem;
+    -webkit-appearance: none;
+
+}
+.harmonographConatiner .rs-bg-color {
+    background-color: #100f0f;
+}
+
+.harmonographConatiner #harmonocolorPicker::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+
+.harmonographConatiner .harmonopicker1 {
+    position: absolute;
+    margin-top: 10px;
+    transform: translateY(-50%);
+    /* transform: rotate(-90deg); */
+    text-align: center;
+    margin-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.harmonographConatiner .harmonocolorPicker1 {
+    width: 250px;
+
+}
+
+.harmonographConatiner #harmonocolorPicker1 {
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);
+    outline: none;
+    border-radius: 2rem;
+    -webkit-appearance: none;
+
+}
+
+.harmonographConatiner #harmonocolorPicker1::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+
+}
+
+@media screen and (max-width: 1030px) {
+    .harmonographConatiner .harmonopicker {
+        bottom: -92px;
+    }
+
+    .harmonographConatiner .harmonobutton-17 {
+        font-size: x-small;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .harmonographConatiner #harmonograph {
+        width: 400px;
+        height: 400px;
+    }
+
+    .harmonographConatiner #harmonocolorPicker {
+        width: 60%;
+    }
+
+    .harmonographConatiner .harmonosliders {
+        gap: 11px;
+    }
+
+    .harmonographConatiner .harmonolable1 {
+        top: 108px;
+    }
+
+    .harmonographConatiner .harmonobutton-17 {
+        width: 7em;
+    }
+
+    .harmonographConatiner #harmonopresets {
+        width: 66px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .harmonographConatiner .harmonosliders {
+        display: none;
+    }
+
+    .harmonographConatiner #harmonochangeColor {
+        top: 6%;
+    }
+
+    .harmonographConatiner #harmonoframe{
+        position: relative;
+        top: 5%;
+    }
+
+    .harmonographConatiner #harmonograph {
+        /* width: -webkit-fill-available; */
+        width: 400px;
+        height: 400px;
+    }
+
+    .harmonographConatiner #harmonoscene {
+        width: 150px;
+        position: absolute;
+        right: 0%;
+        top: 2em;
+    }
+
+    .harmonographConatiner #harmonotopview {
+        width: 180px;
+    }
+
+    .harmonographConatiner #harmonocontainer {
+        display: flex;
+    }
+
+    .harmonographConatiner .harmonobuttons {
+        bottom: 10%;
+    }
+
+    .harmonographConatiner .harmonobutton-17 {
+        width: 5em;
+    }
+
+    .harmonographConatiner .harmonopicker {
+        display: none;
+    }
+
+    .harmonographConatiner #harmonopresets {
+        width: 48px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 812px) {
+    .harmonographConatiner .harmonobuttons {
+        bottom: 120px;
+    }
+
+}
+
+@media screen and (max-width: 426px)  {
+  .harmonographConatiner .dialog-box{
+    width: 260px;
+    font-size: medium;
+  }
+
+}

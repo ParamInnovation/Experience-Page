@@ -33,8 +33,8 @@ export default function GraphCalculator() {
 
   const handleButtonClick = (event) => {
     if (calculator) {
-        const expression = event.target.getAttribute("data-expression");
-        calculator.setExpression({ id: "m", latex: expression });
+      const expression = event.target.getAttribute("data-expression");
+      calculator.setExpression({ id: "m", latex: expression });
     }
   };
 
@@ -53,12 +53,17 @@ export default function GraphCalculator() {
         ref={calculatorRef}
         style={{ width: "60%", height: "70%" }}
       />
-      <button
-        data-expression="r*\theta=600*\sqrt{(\cos(\theta*\pi/3))}"
-        onClick={handleButtonClick}
-      >
-        Set Expression
-      </button>
+      <div className="buttonContainer">
+        <a href="#" className="button" data-expression="r\theta=600\sqrt{\cos\left(\frac{\theta\pi}{3}\right)}" onClick={handleButtonClick}>
+          Set Example Expression
+        </a>
+        <a href="#desmosContent" className="button">
+          How to use
+        </a>
+        <a href="#example" className="button">
+          See some more Expressions
+        </a>
+      </div>
     </div>
   );
 }

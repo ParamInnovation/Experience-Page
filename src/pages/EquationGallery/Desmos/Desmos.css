@@ -1,0 +1,132 @@
+#desmosContainer {
+    background-color: #cccccc;
+    /* background-image: url("./public/graphNew.jpg"); */
+    background: linear-gradient(180deg, rgba(54,56,67, 0),rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1)), url(./public/graphNew.jpg);;
+    background-size: 15%;
+  }
+
+  #desmosContainer h2{
+    color: white;
+  }
+
+  #desmosContainer .example h2{
+    color: rgb(0, 0, 0);
+  }
+
+  #desmosContainer .calculatorContainer {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  #desmosContainer .contents{
+    gap: 5em;
+  }
+
+  #desmosContainer .contents, .example {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  #desmosContainer .calculatorContainer .loader {
+    display: inline-block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+  }
+  #desmosContainer .calculatorContainer .loader div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #ffffff transparent transparent transparent;
+  }
+
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #desmosContainer #calculator {
+    background-color: grey;
+    border: 10px solid black;
+    border-radius: 20px;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  #desmosContainer .dcg-calculator-api-container .dcg-container.dcg-is-interactive{
+    border-radius: 20px;
+  }
+
+  #desmosContainer .buttonContainer {
+    height: 5% !important;
+    gap: 2em;
+  }
+
+  #desmosContainer .button {
+    height: 100% !important;
+  }
+
+  #desmosContainer .example div {
+    background-image: url("./public/example.png");
+    height: 90%;
+    width: 100%;
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
+
+  
+  @media screen and (max-width: 770px) {
+    #desmosContainer .contents iframe {
+        width: 80%;
+    }
+
+    #desmosContainer .example div {
+        background-size: 95%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    #desmosContainer #calculator {
+        width: 90% !important;
+    }
+
+    #desmosContainer .contents h2{
+        text-align: center;
+    }
+
+    #desmosContainer .contents iframe{
+        width: auto;
+        height: auto;
+    }
+
+    #desmosContainer .example div {
+        background-position-y: top;
+    }
+
+    #desmosContainer .example {
+        height: 70vh;
+    }
+  }
+
+

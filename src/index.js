@@ -16,6 +16,8 @@ import WaterGame from "./pages/ElementGames/WaterGame/WaterGame";
 import EarthGame from "./pages/ElementGames/EarthGame/EarthGame";
 import EquationGallery from "./pages/EquationGallery/EquationGallery";
 import Desmos from "./pages/EquationGallery/Desmos/Desmos";
+import Harmonograph from "./pages/EquationGallery/Harmonograph/Harmonograph";
+import Attractors from "./pages/EquationGallery/Attractors/Attractors";
 
 
 function App() {
@@ -34,8 +36,8 @@ function App() {
         <Route path="/earth-game" element={<EarthGame />} />
         <Route path="/equational-gallery" element={<EquationGallery />} />
         <Route path="/desmos" element={<Desmos />} />
-        <Route path="/Harmonograph" element={<EquationGallery />} />
-        <Route path="/Attractors" element={<EquationGallery />} />
+        <Route path="/Harmonograph" element={<Harmonograph />} />
+        <Route path="/Attractors" element={<Attractors />} />
         <Route path="/weights-on-planets" element={<EquationGallery />} />
       </Routes>
     </React.Fragment>
