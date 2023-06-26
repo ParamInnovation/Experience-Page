@@ -1,7 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function EquationNav() {
+
+  let navigate = useNavigate();
+
+  
+
   return (
     <div>
       <div className="nav">
@@ -10,9 +15,11 @@ export default function EquationNav() {
         </div>
         <div>
           <p>
-            <Link to="/equational-gallery">
+            <a href="/equational-gallery">
+            {/* <Link to="/equational-gallery"> */}
               <i class="fa-solid fa-arrow-left"></i>
-            </Link>
+            {/* </Link> */}
+            </a>
           </p>
         </div>
       </div>

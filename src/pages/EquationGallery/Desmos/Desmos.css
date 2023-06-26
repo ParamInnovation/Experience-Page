@@ -108,7 +108,15 @@
 
   @media screen and (max-width: 450px) {
     #desmosContainer #calculator {
-        width: 90% !important;
+        width: 80% !important;
+    }
+
+    #desmosContainer .buttonContainer {
+      position: relative;
+      top: 2%;
+      align-items: center;
+      flex-direction: column;
+      gap: 0.5em;
     }
 
     #desmosContainer .contents h2{

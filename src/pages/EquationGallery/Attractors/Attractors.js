@@ -18,7 +18,7 @@ export default function Attractors() {
       const displayContentlargescreen = document.querySelector(
         "#displayContentlargescreen"
       );
-      displayContentlargescreen.addEventListener("clicl", displayContent);
+      displayContentlargescreen.addEventListener("click", displayContent);
 
       const item = document.querySelector("#item");
       item.addEventListener("click", displayvlueContainer);
@@ -1090,6 +1090,7 @@ export default function Attractors() {
       slider.init();
     }, myRef.current);
   }, []);
+
 
   return (
     <div id="lorenzAttractorContent">
