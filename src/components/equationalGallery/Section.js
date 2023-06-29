@@ -22,7 +22,7 @@ const Section = forwardRef(({ className, setImage, image, index, text, setText, 
   }, [ref, setImage, setText, image, text]);
   
   return (
-    <div className={className} id={id} ref={ref} style={{ height: '100vh', width: '100%', position: 'relative' }}>
+    <div className={className} id={id} ref={ref} style={{ height: '100vh', width: '50%'/*, position: 'relative'*/ }}>
       <h2>
         <Link to={link}>{text}</Link>
       </h2>

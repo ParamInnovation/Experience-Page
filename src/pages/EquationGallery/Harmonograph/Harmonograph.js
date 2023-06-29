@@ -8,7 +8,7 @@ import "./Harmonograph.css";
 import EquationNav from "../EquationNav";
 
 export default function Harmonograph() {
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [isDialogOpen, setIsDialogOpen] = useState(true);
 
   //------------------------------------------
   // var isDragging = false;
@@ -20,6 +20,10 @@ export default function Harmonograph() {
     graph = document.getElementById("harmonograph");
     // console.log(graph);
     gr = graph.getContext("2d");
+
+    document
+      .getElementById("harmonoCloseDialogbox")
+      .addEventListener("click", closeDialogbox);
 
     //------------------------------------------
     // var isDragging = false;
@@ -682,7 +686,7 @@ export default function Harmonograph() {
     }
 
     function updatedialog() {
-      setIsDialogOpen(!isDialogOpen);
+      setIsDialogOpen(true);
       document
         .getElementById("harmonoCloseDialogbox")
         .addEventListener("click", closeDialogbox);

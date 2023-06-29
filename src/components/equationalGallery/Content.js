@@ -6,8 +6,8 @@ import Fullpage, {
   FullpageSection,
 } from "@ap.cx/react-fullpage";
 import "../../pages/EquationGallery/EquationGallery.css";
-import image1 from "./public/Desmos.PNG";
-import image2 from "./public/Harmonograph.png";
+import image01 from "./public/desmosgraph.png";
+import image2 from "./public/harmono-Graph.png";
 import image3 from "./public/Lorenz_Attractor.PNG";
 import image4 from "./public/Weight_on_Planets.PNG";
 
@@ -18,7 +18,7 @@ export default function Content() {
   const [text, setText] = useState("");
 
   const sections = [
-    { image: image1, text: "Desmos", position: "left", link: "/desmos" },
+    { image: image01, text: "Desmos", position: "left", link: "/desmos" },
     {
       image: image2,
       text: "Harmonograph",
@@ -43,7 +43,7 @@ export default function Content() {
     from: { opacity: 0, transform: "translate3d(0, -1005%, 0)" },
     enter: { opacity: 1, transform: "translate3d(0, 0, 0)" },
     leave: { opacity: 0, transform: "translate3d(0, -500%, 0)" },
-    config: { duration: -300 },
+    config: { duration: 0 },
   });
 
   const sectionStyle = {
@@ -66,11 +66,8 @@ export default function Content() {
           }}
         />
       ))}
-      {/* <Fullpage> */}
-      {/* <FullPageSections> */}
       <div className="fullPageSection">
         {sections.map((section, index) => (
-          // <FullpageSection key={index} style={sectionStyle}>
           <Section
             key={index}
             className="fullPageSections"
@@ -83,11 +80,8 @@ export default function Content() {
             id={`section${index}`}
             ref={sectionRefs[index]}
           />
-          // </FullpageSection>
         ))}
       </div>
-      {/* </FullPageSections> */}
-      {/* </Fullpage> */}
     </>
   );
 }

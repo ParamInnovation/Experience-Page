@@ -13,11 +13,13 @@ body::-webkit-scrollbar {
     scroll-behavior: smooth;
   }
   .fixed {
+    /* linear-gradient(rgba(1, 1, 1, 0.5), rgba(1, 1, 1, 0.8)), url("/static/media/Harmonograph.89ad139e0a38bf09113d.png") */
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
     width: 100%;
     background-color: black;
+    /* background-size: 100% 100% !important; */
   }
   
   .fullPageSection{
@@ -43,6 +45,10 @@ body::-webkit-scrollbar {
     position: relative;
     align-items: center;
     padding-left: 5%;
+  }
+
+  .fullPageSection #section1 {
+    left: 60%;
   }
 
   a{
