@@ -93,6 +93,7 @@ export default function Harmonograph() {
 
     var stsp = document.getElementById("harmonostSp");
 
+
     var pend1Freq = document.getElementById("harmonopend1Freq");
     var pend1 = document.getElementById("harmonopend1");
     var sliderPend1 = document.getElementById("harmonouniqueslider1");
@@ -401,10 +402,10 @@ export default function Harmonograph() {
         handleShape: "round",
         handleSize: "+10",
         width: 5,
-        radius: 74.82,
+        radius: 70, //74.82
         value: 1,
         min: 0,
-        max: 999,
+        max: 550,
         step: 1,
         tooltipFormat: "changeFreqA",
         change: function (args) {
@@ -418,10 +419,10 @@ export default function Harmonograph() {
         handleShape: "round",
         handleSize: "+10",
         width: 5,
-        radius: 74.82,
+        radius: 70,
         value: 1,
         min: 0,
-        max: 999,
+        max: 550,
         step: 1,
         tooltipFormat: "changeFreqB",
         change: function (args) {
@@ -435,10 +436,10 @@ export default function Harmonograph() {
         handleShape: "round",
         handleSize: "+10",
         width: 5,
-        radius: 74.82,
+        radius: 70,
         value: 1,
         min: 0,
-        max: 999,
+        max: 550,
         step: 1,
         tooltipFormat: "changeFreqC",
         change: function (args) {
@@ -529,7 +530,7 @@ export default function Harmonograph() {
       sliderType: "min-range",
       value: 1,
       min: 0,
-      max: 999,
+      max: 550,
       step: 1,
       tooltipFormat: "tooltipVal1",
       drag: function (event) {
@@ -556,7 +557,7 @@ export default function Harmonograph() {
       sliderType: "min-range",
       value: 1,
       min: 0,
-      max: 999,
+      max: 550,
       step: 1,
       tooltipFormat: "tooltipVal2",
       drag: function (event) {
@@ -583,7 +584,7 @@ export default function Harmonograph() {
       sliderType: "min-range",
       value: 1,
       min: 0,
-      max: 999,
+      max: 550,
       step: 1,
       tooltipFormat: "tooltipVal3",
       drag: function (event) {

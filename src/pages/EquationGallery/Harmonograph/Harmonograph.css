@@ -115,6 +115,8 @@
   .harmonographConatiner #harmonoCloseDialogbox{
     width: 8em;
     height: 36px;
+    position: sticky;
+    bottom: 0;
     /* display: flex; */
     justify-content: center;
     align-items: center;
@@ -291,18 +293,21 @@
     flex-direction: column;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: absolute;
     top: -65px;
     left: 2%;
     gap: 20px;
-    width: 100px;
+    width: auto;
     height: 100%;
 }
 
+
 .harmonographConatiner .harmonolable1 {
     position: relative;
+    /* width: 30%; */
     top: 130px;
-    left: 28px;
+    /* left: 28px; */
     z-index: 4;
 }
 
@@ -792,7 +797,38 @@
 
 }
 
+@media screen and (max-width: 1440px) {
+    .harmonographConatiner .harmonosliders {
+        top: 0;
+        gap: 10px;
+    }
+    .harmonographConatiner .rs-container {
+        height: 130px !important;
+        width: 130px !important;
+    }
+}
+
 @media screen and (max-width: 1030px) {
+
+    .harmonographConatiner .harmonosliders {
+        gap: 0;
+    }
+
+    .harmonographConatiner .rs-container {
+        height: 130px !important;
+        width: 130px !important;
+    }
+    .harmonographConatiner #harmonofrequencySlider1,
+    .harmonographConatiner #harmonofrequencySlider2,
+    .harmonographConatiner #harmonofrequencySlider3 {
+        height: 130px !important;
+        width: 130px !important;
+    }
+
+    .harmonographConatiner .harmonolable1 {
+        top: 100px;
+    }
+
     .harmonographConatiner .harmonopicker {
         bottom: -92px;
     }
@@ -813,7 +849,7 @@
     }
 
     .harmonographConatiner .harmonosliders {
-        gap: 11px;
+        /* gap: 11px; */
     }
 
     .harmonographConatiner .harmonolable1 {

@@ -18,6 +18,7 @@ import EquationGallery from "./pages/EquationGallery/EquationGallery";
 import Desmos from "./pages/EquationGallery/Desmos/Desmos";
 import Harmonograph from "./pages/EquationGallery/Harmonograph/Harmonograph";
 import Attractors from "./pages/EquationGallery/Attractors/Attractors";
+import Quiz from "./pages/EquationGallery/Quiz/Quiz";
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
         <Route path="/desmos" element={<Desmos />} />
         <Route path="/Harmonograph" element={<Harmonograph />} />
         <Route path="/Attractors" element={<Attractors />} />
-        <Route path="/weights-on-planets" element={<EquationGallery />} />
+        <Route path="/quiz" element={<Quiz />} />
       </Routes>
     </React.Fragment>
   );
